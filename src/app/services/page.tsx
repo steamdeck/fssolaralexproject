@@ -13,6 +13,7 @@ import {
   BarChart
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
 const services = [
   {
@@ -64,7 +65,7 @@ export default function ServicesPage() {
     <div className="bg-background">
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
+          <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
               Our Services
             </h1>
@@ -72,35 +73,37 @@ export default function ServicesPage() {
               We offer a complete, end-to-end range of solar solutions to guide you every
               step of the way on your journey to energy independence and sustainability.
             </p>
-          </div>
+          </ScrollReveal>
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => {
+            {services.map((service, i) => {
               const serviceImage = PlaceHolderImages.find(img => img.id === service.imageId);
               return (
-                <Card key={service.title} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
-                  {serviceImage && (
-                     <div className="relative aspect-video w-full">
-                       <Image
-                         src={serviceImage.imageUrl}
-                         alt={serviceImage.description}
-                         fill
-                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                         className="object-cover transition-transform duration-300 group-hover:scale-105"
-                         data-ai-hint={serviceImage.imageHint}
-                       />
-                     </div>
-                  )}
-                  <CardHeader className="flex flex-row items-start gap-4 space-y-0 pt-6">
-                    <div className="flex-shrink-0 mt-1">{service.icon}</div>
-                    <div className="flex-1">
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground">{service.description}</p>
-                  </CardContent>
-                </Card>
+                <ScrollReveal key={service.title} delay={i * 150}>
+                  <Card className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full">
+                    {serviceImage && (
+                       <div className="relative aspect-video w-full">
+                         <Image
+                           src={serviceImage.imageUrl}
+                           alt={serviceImage.description}
+                           fill
+                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                           className="object-cover transition-transform duration-300 group-hover:scale-105"
+                           data-ai-hint={serviceImage.imageHint}
+                         />
+                       </div>
+                    )}
+                    <CardHeader className="flex flex-row items-start gap-4 space-y-0 pt-6">
+                      <div className="flex-shrink-0 mt-1">{service.icon}</div>
+                      <div className="flex-1">
+                        <CardTitle className="text-xl">{service.title}</CardTitle>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
               );
             })}
           </div>
@@ -109,18 +112,20 @@ export default function ServicesPage() {
 
       <section className="bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-4xl rounded-xl bg-primary p-8 text-center text-primary-foreground shadow-lg md:p-12 transition-transform duration-300 hover:scale-105">
-            <h2 className="text-3xl font-bold">Ready to Go Solar?</h2>
-            <p className="mt-4 text-lg text-primary-foreground/80">
-              Let&apos;s start with a free, no-obligation consultation. Our team is
-              ready to answer your questions and design the perfect system for you.
-            </p>
-            <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 group">
-              <Link href="/contact">
-                Get Your Free Quote <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-            </Button>
-          </div>
+          <ScrollReveal>
+            <div className="mx-auto max-w-4xl rounded-xl bg-primary p-8 text-center text-primary-foreground shadow-lg md:p-12 transition-transform duration-300 hover:scale-105">
+              <h2 className="text-3xl font-bold">Ready to Go Solar?</h2>
+              <p className="mt-4 text-lg text-primary-foreground/80">
+                Let&apos;s start with a free, no-obligation consultation. Our team is
+                ready to answer your questions and design the perfect system for you.
+              </p>
+              <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 group">
+                <Link href="/contact">
+                  Get Your Free Quote <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </div>

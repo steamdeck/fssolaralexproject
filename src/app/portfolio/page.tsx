@@ -6,6 +6,7 @@ import { Star, StarHalf, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
 const projects = [
   {
@@ -104,40 +105,42 @@ const ProjectGrid = ({ filter }: { filter: string }) => {
 
   return (
      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {filteredProjects.map((project) => {
+      {filteredProjects.map((project, i) => {
         const projectImage = PlaceHolderImages.find(
           (img) => img.id === project.id
         );
         return (
-          <Card key={project.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
-            {projectImage && (
-              <div className="relative aspect-video w-full">
-                <Image
-                  src={projectImage.imageUrl}
-                  alt={projectImage.description}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  data-ai-hint={projectImage.imageHint}
-                />
-              </div>
-            )}
-            <CardHeader>
-              <CardTitle>{project.title}</CardTitle>
-              <CardDescription className="flex items-center gap-2 pt-1">
-                <MapPin className="size-4 text-muted-foreground" />
-                {project.location}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="flex flex-grow flex-col">
-              <blockquote className="flex-grow border-l-4 border-accent pl-4 italic text-muted-foreground">
-                {project.testimonial}
-              </blockquote>
-            </CardContent>
-             <CardFooter className="mt-4 flex items-center">
-                {renderStars(project.rating)}
-              </CardFooter>
-          </Card>
+          <ScrollReveal key={project.id} delay={i * 100}>
+            <Card className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full">
+              {projectImage && (
+                <div className="relative aspect-video w-full">
+                  <Image
+                    src={projectImage.imageUrl}
+                    alt={projectImage.description}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint={projectImage.imageHint}
+                  />
+                </div>
+              )}
+              <CardHeader>
+                <CardTitle>{project.title}</CardTitle>
+                <CardDescription className="flex items-center gap-2 pt-1">
+                  <MapPin className="size-4 text-muted-foreground" />
+                  {project.location}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-grow flex-col">
+                <blockquote className="flex-grow border-l-4 border-accent pl-4 italic text-muted-foreground">
+                  {project.testimonial}
+                </blockquote>
+              </CardContent>
+               <CardFooter className="mt-4 flex items-center">
+                  {renderStars(project.rating)}
+                </CardFooter>
+            </Card>
+          </ScrollReveal>
         );
       })}
     </div>
@@ -151,7 +154,7 @@ export default function PortfolioPage() {
     <div className="bg-background">
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
+          <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
               Our Work
             </h1>
@@ -159,38 +162,41 @@ export default function PortfolioPage() {
               We take pride in every project we complete. Explore a selection
               of our residential, commercial, and industrial solar installations.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <Tabs defaultValue="all" className="mt-12 w-full">
-            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-auto max-w-2xl h-auto flex-wrap">
-              {categories.map(category => (
-                <TabsTrigger key={category} value={category} className="capitalize py-2">
-                  {category}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-            
-            <div className="mt-8">
-              {categories.map(category => (
-                <TabsContent key={category} value={category}>
-                  <ProjectGrid filter={category} />
-                </TabsContent>
-              ))}
-            </div>
-          </Tabs>
-
+          <ScrollReveal delay={200}>
+            <Tabs defaultValue="all" className="mt-12 w-full">
+              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-auto max-w-2xl h-auto flex-wrap">
+                {categories.map(category => (
+                  <TabsTrigger key={category} value={category} className="capitalize py-2">
+                    {category}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+              
+              <div className="mt-8">
+                {categories.map(category => (
+                  <TabsContent key={category} value={category}>
+                    <ProjectGrid filter={category} />
+                  </TabsContent>
+                ))}
+              </div>
+            </Tabs>
+          </ScrollReveal>
         </div>
       </section>
 
       <section className="bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6 text-center">
-            <h2 className="text-3xl font-bold tracking-tight">Inspired by Our Work?</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">Let's discuss how we can bring the power of solar to your home or business. Get a personalized, no-obligation quote from our experts today.</p>
-             <Button asChild size="lg" className="mt-8">
-              <Link href="/contact">
-                Start Your Solar Project
-              </Link>
-            </Button>
+            <ScrollReveal>
+              <h2 className="text-3xl font-bold tracking-tight">Inspired by Our Work?</h2>
+              <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">Let's discuss how we can bring the power of solar to your home or business. Get a personalized, no-obligation quote from our experts today.</p>
+               <Button asChild size="lg" className="mt-8">
+                <Link href="/contact">
+                  Start Your Solar Project
+                </Link>
+              </Button>
+            </ScrollReveal>
         </div>
       </section>
     </div>

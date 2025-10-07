@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { blogPosts } from '@/lib/blog-data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
 const benefits = [
   {
@@ -80,46 +81,50 @@ export default function Home() {
       <section className="relative w-full py-20 md:py-32 lg:py-40">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-                Power Your Future with Solaris Hub
-              </h1>
-              <p className="text-lg text-muted-foreground">
-                Your trusted partner in harnessing the power of the sun. We provide
-                end-to-end solar solutions for a brighter, cleaner, and more
-                sustainable tomorrow.
-              </p>
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <Button asChild size="lg" className="group">
-                  <Link href="/services">
-                    Explore Our Services <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="secondary">
-                  <Link href="/contact">Get a Free Quote</Link>
-                </Button>
+            <ScrollReveal>
+              <div className="space-y-6">
+                <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+                  Power Your Future with Solaris Hub
+                </h1>
+                <p className="text-lg text-muted-foreground">
+                  Your trusted partner in harnessing the power of the sun. We provide
+                  end-to-end solar solutions for a brighter, cleaner, and more
+                  sustainable tomorrow.
+                </p>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <Button asChild size="lg" className="group">
+                    <Link href="/services">
+                      Explore Our Services <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
+                    </Link>
+                  </Button>
+                  <Button asChild size="lg" variant="secondary">
+                    <Link href="/contact">Get a Free Quote</Link>
+                  </Button>
+                </div>
               </div>
-            </div>
-            <div className="relative h-64 w-full overflow-hidden rounded-xl shadow-2xl md:h-auto md:aspect-[16/10]">
-              {heroImage && (
-                <Image
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-300 hover:scale-105"
-                  priority
-                  data-ai-hint={heroImage.imageHint}
-                />
-              )}
-            </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="relative h-64 w-full overflow-hidden rounded-xl shadow-2xl md:h-auto md:aspect-[16/10]">
+                {heroImage && (
+                  <Image
+                    src={heroImage.imageUrl}
+                    alt={heroImage.description}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    priority
+                    data-ai-hint={heroImage.imageHint}
+                  />
+                )}
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
       <section id="benefits" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
+          <ScrollReveal className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-primary">The Solaris Advantage</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
               Why Go Solar?
@@ -128,20 +133,22 @@ export default function Home() {
               Discover the incredible advantages of switching to solar energy for
               your home or business. It's more than just panels; it's a lifestyle change.
             </p>
-          </div>
+          </ScrollReveal>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {benefits.map((benefit) => (
-              <Card key={benefit.title} className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                  <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-background">
-                    {benefit.icon}
-                  </div>
-                  <CardTitle className="mt-4">{benefit.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{benefit.description}</p>
-                </CardContent>
-              </Card>
+            {benefits.map((benefit, i) => (
+              <ScrollReveal key={benefit.title} delay={i * 150}>
+                <Card className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
+                  <CardHeader>
+                    <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-background">
+                      {benefit.icon}
+                    </div>
+                    <CardTitle className="mt-4">{benefit.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{benefit.description}</p>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -149,89 +156,95 @@ export default function Home() {
 
       <section className="w-full bg-primary text-primary-foreground py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            See Your Potential Savings
-          </h2>
-          <p className="mt-4 mx-auto max-w-2xl text-lg text-primary-foreground/80">
-            Use our AI-powered calculator to get a personalized estimate of how much you could save by switching to solar and see your positive environmental impact.
-          </p>
-          <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 group">
-            <Link href="/calculator">
-              Calculate Your Savings <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-          </Button>
+          <ScrollReveal>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              See Your Potential Savings
+            </h2>
+            <p className="mt-4 mx-auto max-w-2xl text-lg text-primary-foreground/80">
+              Use our AI-powered calculator to get a personalized estimate of how much you could save by switching to solar and see your positive environmental impact.
+            </p>
+            <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 group">
+              <Link href="/calculator">
+                Calculate Your Savings <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </Button>
+          </ScrollReveal>
         </div>
       </section>
       
       <section id="portfolio" className="w-full py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
+          <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Our Recent Work
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               We take pride in every installation. Here are a few of our successful projects that are now powering homes and businesses with clean energy.
             </p>
-          </div>
+          </ScrollReveal>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {portfolioHighlights.map((project) => (
-              <Card key={project.id} className="overflow-hidden transition-shadow duration-300 hover:shadow-xl group">
-                <div className="relative aspect-video w-full">
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.description}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    data-ai-hint={project.imageHint}
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>{project.description}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    A successful residential solar installation, delivering clean energy and significant savings.
-                  </p>
-                </CardContent>
-              </Card>
+            {portfolioHighlights.map((project, i) => (
+              <ScrollReveal key={project.id} delay={i * 150}>
+                <Card className="overflow-hidden transition-shadow duration-300 hover:shadow-xl group h-full">
+                  <div className="relative aspect-video w-full">
+                    <Image
+                      src={project.imageUrl}
+                      alt={project.description}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      data-ai-hint={project.imageHint}
+                    />
+                  </div>
+                  <CardHeader>
+                    <CardTitle>{project.description}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">
+                      A successful residential solar installation, delivering clean energy and significant savings.
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
             ))}
           </div>
-          <div className="mt-12 text-center">
+          <ScrollReveal className="mt-12 text-center">
             <Button asChild className="group">
               <Link href="/portfolio">
                 View Full Portfolio <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
       <section id="testimonials" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-            <div className="mx-auto max-w-3xl text-center">
+            <ScrollReveal className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What Our Customers Say</h2>
                 <p className="mt-4 text-lg text-muted-foreground">We're proud to have helped thousands of clients embrace solar energy. Here's what some of them have to say.</p>
-            </div>
+            </ScrollReveal>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {testimonials.map((testimonial) => (
-                    <Card key={testimonial.name} className="flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <CardHeader className="flex-row gap-4 items-center">
-                            <Avatar data-ai-hint={testimonial.avatarHint}>
-                                <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                                <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                            </Avatar>
-                            <div>
-                                <CardTitle>{testimonial.name}</CardTitle>
-                                {renderStars(testimonial.rating)}
-                            </div>
-                        </CardHeader>
-                        <CardContent>
-                            <blockquote className="text-muted-foreground italic border-l-4 border-accent pl-4">
-                                {testimonial.comment}
-                            </blockquote>
-                        </CardContent>
-                    </Card>
+                {testimonials.map((testimonial, i) => (
+                    <ScrollReveal key={testimonial.name} delay={i * 150}>
+                      <Card className="flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
+                          <CardHeader className="flex-row gap-4 items-center">
+                              <Avatar data-ai-hint={testimonial.avatarHint}>
+                                  <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                              </Avatar>
+                              <div>
+                                  <CardTitle>{testimonial.name}</CardTitle>
+                                  {renderStars(testimonial.rating)}
+                              </div>
+                          </CardHeader>
+                          <CardContent>
+                              <blockquote className="text-muted-foreground italic border-l-4 border-accent pl-4">
+                                  {testimonial.comment}
+                              </blockquote>
+                          </CardContent>
+                      </Card>
+                    </ScrollReveal>
                 ))}
             </div>
         </div>
@@ -239,56 +252,58 @@ export default function Home() {
 
       <section id="blog" className="w-full bg-background py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
+          <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               From Our Blog
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Stay updated with the latest in solar energy news, tips, and company updates.
             </p>
-          </div>
+          </ScrollReveal>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {latestPosts.map((post) => (
-              <Card key={post.slug} className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
-                <Link href={`/blog/${post.slug}`} className="block">
-                  <div className="relative aspect-video w-full overflow-hidden rounded-t-lg">
-                    {post.imageUrl && (
-                      <Image
-                        src={post.imageUrl}
-                        alt={`Thumbnail for ${post.title}`}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        data-ai-hint={post.imageHint}
-                      />
-                    )}
+            {latestPosts.map((post, i) => (
+              <ScrollReveal key={post.slug} delay={i * 150}>
+                <Card className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full">
+                  <Link href={`/blog/${post.slug}`} className="block">
+                    <div className="relative aspect-video w-full overflow-hidden rounded-t-lg">
+                      {post.imageUrl && (
+                        <Image
+                          src={post.imageUrl}
+                          alt={`Thumbnail for ${post.title}`}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          data-ai-hint={post.imageHint}
+                        />
+                      )}
+                    </div>
+                  </Link>
+                  <CardHeader>
+                    <CardTitle className="leading-tight group-hover:text-primary transition-colors duration-300">
+                      <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
+                  </CardContent>
+                  <div className="p-6 pt-0">
+                    <Button asChild variant="link" className="p-0 h-auto group/link">
+                      <Link href={`/blog/${post.slug}`}>
+                        Read More <ArrowRight className="ml-2 size-4 transition-transform duration-300 group-hover/link:translate-x-1" />
+                      </Link>
+                    </Button>
                   </div>
-                </Link>
-                <CardHeader>
-                  <CardTitle className="leading-tight group-hover:text-primary transition-colors duration-300">
-                    <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
-                </CardContent>
-                <div className="p-6 pt-0">
-                  <Button asChild variant="link" className="p-0 h-auto group/link">
-                    <Link href={`/blog/${post.slug}`}>
-                      Read More <ArrowRight className="ml-2 size-4 transition-transform duration-300 group-hover/link:translate-x-1" />
-                    </Link>
-                  </Button>
-                </div>
-              </Card>
+                </Card>
+              </ScrollReveal>
             ))}
           </div>
-           <div className="mt-12 text-center">
+           <ScrollReveal className="mt-12 text-center">
             <Button asChild className="group">
               <Link href="/blog">
                 Visit Our Blog <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
     </div>
