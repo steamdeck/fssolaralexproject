@@ -1,0 +1,63 @@
+import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { blogPosts } from '@/lib/blog-data';
+
+export default function BlogPage() {
+  return (
+    <div className="bg-background">
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+              Solaris Hub Blog
+            </h1>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Your source for the latest news, tips, and insights in the world
+              of solar energy.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {blogPosts.map((post) => (
+              <Card key={post.slug} className="flex flex-col">
+                {post.imageUrl && (
+                  <div className="relative aspect-video w-full overflow-hidden rounded-t-lg">
+                    <Image
+                      src={post.imageUrl}
+                      alt={`Thumbnail for ${post.title}`}
+                      fill
+                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      data-ai-hint={post.imageHint}
+                    />
+                  </div>
+                )}
+                <CardHeader>
+                  <p className="text-sm text-muted-foreground">
+                    {post.date} &bull; {post.author}
+                  </p>
+                  <CardTitle className="leading-tight">{post.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground line-clamp-4">
+                    {post.excerpt}
+                  </p>
+                </CardContent>
+                <div className="p-6 pt-0">
+                  <Button asChild variant="link" className="p-0 h-auto">
+                    <Link href={`/blog/${post.slug}`}>
+                      Read More <ArrowRight className="ml-2 size-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

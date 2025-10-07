@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-home",
+      "description": "A beautiful modern house with solar panels on the roof under a clear blue sky.",
+      "imageUrl": "https://picsum.photos/seed/hero-home/1280/720",
+      "imageHint": "solar panels house"
+    },
+    {
+      "id": "about-us-main",
+      "description": "A diverse team of engineers and technicians collaborating in a modern office.",
+      "imageUrl": "https://picsum.photos/seed/about-main/1200/800",
+      "imageHint": "diverse team office"
+    },
+    {
+      "id": "team-member-1",
+      "description": "Professional headshot of Jane Doe, CEO.",
+      "imageUrl": "https://picsum.photos/seed/team-1/400/400",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Professional headshot of John Smith, Lead Engineer.",
+      "imageUrl": "https://picsum.photos/seed/team-2/400/400",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Professional headshot of Emily White, Project Manager.",
+      "imageUrl": "https://picsum.photos/seed/team-3/400/400",
+      "imageHint": "professional woman smile"
+    },
+    {
+      "id": "team-member-4",
+      "description": "Professional headshot of Michael Brown, Sales Director.",
+      "imageUrl": "https://picsum.photos/seed/team-4/400/400",
+      "imageHint": "professional man glasses"
+    },
+    {
+      "id": "portfolio-project-1",
+      "description": "Suburban Family Home Installation",
+      "imageUrl": "https://picsum.photos/seed/project-1/600/400",
+      "imageHint": "suburban house solar"
+    },
+    {
+      "id": "portfolio-project-2",
+      "description": "Commercial Rooftop Project",
+      "imageUrl": "https://picsum.photos/seed/project-2/600/400",
+      "imageHint": "commercial building solar"
+    },
+    {
+      "id": "portfolio-project-3",
+      "description": "Rural Farm Solar Array",
+      "imageUrl": "https://picsum.photos/seed/project-3/600/400",
+      "imageHint": "farm solar panels"
+    },
+    {
+      "id": "portfolio-project-4",
+      "description": "Modern Urban Residence",
+      "imageUrl": "https://picsum.photos/seed/project-4/600/400",
+      "imageHint": "modern house solar"
+    },
+    {
+      "id": "portfolio-project-5",
+      "description": "Community Center Power",
+      "imageUrl": "https://picsum.photos/seed/project-5/600/400",
+      "imageHint": "community building"
+    },
+    {
+      "id": "portfolio-project-6",
+      "description": "Industrial Warehouse Solution",
+      "imageUrl": "https://picsum.photos/seed/project-6/600/400",
+      "imageHint": "warehouse roof solar"
+    },
+    {
+      "id": "blog-post-thumbnail-1",
+      "description": "Abstract image of sun rays and solar panels.",
+      "imageUrl": "https://picsum.photos/seed/blog-1/600/400",
+      "imageHint": "solar energy abstract"
+    },
+    {
+      "id": "blog-post-thumbnail-2",
+      "description": "A hand holding a small plant with a sun flare in the background.",
+      "imageUrl": "https://picsum.photos/seed/blog-2/600/400",
+      "imageHint": "sustainability energy"
+    },
+    {
+      "id": "blog-post-thumbnail-3",
+      "description": "A diagram showing how solar panel financing works.",
+      "imageUrl": "https://picsum.photos/seed/blog-3/600/400",
+      "imageHint": "financial chart"
+    },
+    {
+      "id": "blog-post-thumbnail-4",
+      "description": "A technician cleaning solar panels on a roof.",
+      "imageUrl": "https://picsum.photos/seed/blog-4/600/400",
+      "imageHint": "solar panel maintenance"
+    },
+    {
+      "id": "contact-map",
+      "description": "A map showing the location of Solaris Hub headquarters.",
+      "imageUrl": "https://picsum.photos/seed/map-location/1200/800",
+      "imageHint": "city map"
+    }
+  ]
 }
