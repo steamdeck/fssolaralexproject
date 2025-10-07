@@ -26,7 +26,7 @@ export function ScrollGradientBackground({
   return (
     <div
       className={cn(
-        'relative flex min-h-dvh flex-col bg-gradient-to-br from-background via-emerald-50/20 to-background',
+        'relative flex min-h-dvh flex-col bg-gradient-to-br from-background via-primary/5 to-background',
         className
       )}
       style={{
