@@ -5,6 +5,7 @@ import { SiteHeader } from '@/components/layout/header';
 import { SiteFooter } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import { Preloader } from '@/components/layout/preloader';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           inter.variable
         )}
       >
+        <Preloader />
         <div className="relative flex min-h-dvh flex-col bg-background">
           <SiteHeader />
           <main className="flex-1">{children}</main>
