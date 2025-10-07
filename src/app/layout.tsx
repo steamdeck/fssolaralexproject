@@ -6,6 +6,7 @@ import { SiteFooter } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { Preloader } from '@/components/layout/preloader';
+import { ScrollGradientBackground } from '@/components/layout/scroll-gradient-background';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -29,11 +30,11 @@ export default function RootLayout({
         )}
       >
         <Preloader />
-        <div className="relative flex min-h-dvh flex-col bg-gradient-to-b from-background via-emerald-50/20 to-background">
+        <ScrollGradientBackground>
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />
-        </div>
+        </ScrollGradientBackground>
         <Toaster />
       </body>
     </html>
