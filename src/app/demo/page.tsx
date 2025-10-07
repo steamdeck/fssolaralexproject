@@ -21,9 +21,7 @@ export default function DemoPage() {
         src="https://demo.casethemes.net/solarva/"
         style={iframeStyle}
         title="Solarva Demo"
-      >
-        Your browser doesn&apos;t support iframes
-      </iframe>
+      />
     </div>
   );
 }
