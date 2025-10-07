@@ -9,16 +9,7 @@ import { Logo } from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-
-export const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
-  { href: '/services', label: 'Our Services' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/calculator', label: 'Savings Calculator' },
-  { href: '/contact', label: 'Contact Us' },
-];
+import { navLinks } from './nav-links';
 
 export function SiteHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Logo } from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { navLinks } from './header';
+import { navLinks } from './nav-links';
 
 const socialLinks = [
   { name: 'Facebook', href: '#' },
