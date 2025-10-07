@@ -1,6 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import {
   Form,
   FormControl,
@@ -39,7 +40,7 @@ function SubmitButton() {
 const initialFormState: FormState = {};
 
 export function CalculatorForm() {
-  const [state, formAction] = useFormState(handleCalculateSavings, initialFormState);
+  const [state, formAction] = useActionState(handleCalculateSavings, initialFormState);
   // We use a dummy useForm for component compatibility but logic is in server action
   const form = useForm(); 
 
