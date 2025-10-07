@@ -93,7 +93,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <a href="tel:+1800555SOLAR" className="text-muted-foreground hover:text-primary">
+                    <a href="tel:+1800555SOLAR" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
                       +1 (800) 555-SOLAR
                     </a>
                   </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <a href="mailto:contact@solarishub.com" className="text-muted-foreground hover:text-primary">
+                    <a href="mailto:contact@solarishub.com" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
                       contact@solarishub.com
                     </a>
                   </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                     alt={mapImage.description}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 hover:scale-105"
                     data-ai-hint={mapImage.imageHint}
                   />
                 </div>

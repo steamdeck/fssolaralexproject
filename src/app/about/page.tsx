@@ -61,7 +61,7 @@ export default function AboutPage() {
                   alt={mainImage.description}
                   fill
                   sizes="100vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 hover:scale-105"
                   data-ai-hint={mainImage.imageHint}
                 />
               </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
             </div>
             <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
                 {companyValues.map((value) => (
-                    <div key={value} className="flex flex-col items-center text-center">
+                    <div key={value} className="flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
                         <div className="flex size-16 items-center justify-center rounded-full bg-background">
                             <CheckCircle className="size-8 text-primary" />
                         </div>
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 (img) => img.id === member.imageId
               );
               return (
-                <Card key={member.name} className="text-center">
+                <Card key={member.name} className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                   <CardHeader className="items-center">
                     {memberImage && (
                       <div className="relative h-32 w-32 rounded-full overflow-hidden">

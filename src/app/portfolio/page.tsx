@@ -88,7 +88,7 @@ export default function PortfolioPage() {
                 (img) => img.id === project.id
               );
               return (
-                <Card key={project.id} className="flex flex-col overflow-hidden">
+                <Card key={project.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
                   {projectImage && (
                     <div className="relative aspect-video w-full">
                       <Image

@@ -53,7 +53,7 @@ export default function ServicesPage() {
 
           <div className="mt-16 grid gap-8 md:grid-cols-2">
             {services.map((service) => (
-              <Card key={service.title} className="flex flex-col">
+              <Card key={service.title} className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader className="flex flex-row items-start gap-4 space-y-0">
                   <div className="flex-shrink-0">{service.icon}</div>
                   <div className="flex-1">
@@ -71,15 +71,15 @@ export default function ServicesPage() {
 
       <section className="bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-4xl rounded-xl bg-primary p-8 text-center text-primary-foreground shadow-lg md:p-12">
+          <div className="mx-auto max-w-4xl rounded-xl bg-primary p-8 text-center text-primary-foreground shadow-lg md:p-12 transition-transform duration-300 hover:scale-105">
             <h2 className="text-3xl font-bold">Ready to Go Solar?</h2>
             <p className="mt-4 text-lg text-primary-foreground/80">
               Let&apos;s start with a free, no-obligation consultation. Our team is
               ready to answer your questions and design the perfect system for you.
             </p>
-            <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 group">
               <Link href="/contact">
-                Get Your Free Quote <ArrowRight className="ml-2 size-5" />
+                Get Your Free Quote <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
           </div>

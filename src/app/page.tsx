@@ -51,9 +51,9 @@ export default function Home() {
                 sustainable tomorrow.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="group">
                   <Link href="/services">
-                    Explore Our Services <ArrowRight className="ml-2 size-5" />
+                    Explore Our Services <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="secondary">
@@ -68,7 +68,7 @@ export default function Home() {
                   alt={heroImage.description}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 hover:scale-105"
                   priority
                   data-ai-hint={heroImage.imageHint}
                 />
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((benefit) => (
-              <Card key={benefit.title} className="text-center">
+              <Card key={benefit.title} className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader>
                   <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-background">
                     {benefit.icon}
@@ -115,9 +115,9 @@ export default function Home() {
           <p className="mt-4 mx-auto max-w-2xl text-lg text-primary-foreground/80">
             Use our AI-powered calculator to estimate how much you could save by switching to solar and your positive environmental impact.
           </p>
-          <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild size="lg" variant="secondary" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 group">
             <Link href="/calculator">
-              Calculate Your Savings <ArrowRight className="ml-2 size-5" />
+              Calculate Your Savings <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </Button>
         </div>
@@ -135,7 +135,7 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {portfolioHighlights.map((project) => (
-              <Card key={project.id} className="overflow-hidden">
+              <Card key={project.id} className="overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                 <div className="relative aspect-video w-full">
                   <Image
                     src={project.imageUrl}
@@ -153,9 +153,9 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button asChild>
+            <Button asChild className="group">
               <Link href="/portfolio">
-                View Full Portfolio <ArrowRight className="ml-2 size-5" />
+                View Full Portfolio <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
           </div>
@@ -174,14 +174,14 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {latestPosts.map((post) => (
-              <Card key={post.slug} className="flex flex-col">
+              <Card key={post.slug} className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="relative aspect-video w-full overflow-hidden rounded-t-lg">
                   {post.imageUrl && (
                      <Image
                       src={post.imageUrl}
                       alt={`Thumbnail for ${post.title}`}
                       fill
-                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       data-ai-hint={post.imageHint}
                     />
@@ -194,9 +194,9 @@ export default function Home() {
                   <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
                 </CardContent>
                 <div className="p-6 pt-0">
-                  <Button asChild variant="link" className="p-0 h-auto">
+                  <Button asChild variant="link" className="p-0 h-auto group">
                     <Link href={`/blog/${post.slug}`}>
-                      Read More <ArrowRight className="ml-2 size-4" />
+                      Read More <ArrowRight className="ml-2 size-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
                   </Button>
                 </div>
@@ -204,9 +204,9 @@ export default function Home() {
             ))}
           </div>
            <div className="mt-12 text-center">
-            <Button asChild>
+            <Button asChild className="group">
               <Link href="/blog">
-                Visit Our Blog <ArrowRight className="ml-2 size-5" />
+                Visit Our Blog <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
           </div>

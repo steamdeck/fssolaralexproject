@@ -22,14 +22,14 @@ export default function BlogPage() {
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
-              <Card key={post.slug} className="flex flex-col">
+              <Card key={post.slug} className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 {post.imageUrl && (
                   <div className="relative aspect-video w-full overflow-hidden rounded-t-lg">
                     <Image
                       src={post.imageUrl}
                       alt={`Thumbnail for ${post.title}`}
                       fill
-                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       data-ai-hint={post.imageHint}
                     />
@@ -47,9 +47,9 @@ export default function BlogPage() {
                   </p>
                 </CardContent>
                 <div className="p-6 pt-0">
-                  <Button asChild variant="link" className="p-0 h-auto">
+                  <Button asChild variant="link" className="p-0 h-auto group">
                     <Link href={`/blog/${post.slug}`}>
-                      Read More <ArrowRight className="ml-2 size-4" />
+                      Read More <ArrowRight className="ml-2 size-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
                   </Button>
                 </div>
