@@ -13,6 +13,12 @@
       "imageHint": "diverse team office"
     },
     {
+      "id": "about-us-mission",
+      "description": "Close-up of a solar panel reflecting the sun.",
+      "imageUrl": "https://picsum.photos/seed/about-mission/800/600",
+      "imageHint": "solar panel sun"
+    },
+    {
       "id": "team-member-1",
       "description": "Professional headshot of Jane Doe, CEO.",
       "imageUrl": "https://picsum.photos/seed/team-1/400/400",
@@ -73,6 +79,18 @@
       "imageHint": "warehouse roof solar"
     },
     {
+      "id": "portfolio-project-7",
+      "description": "Lakefront Vacation Home",
+      "imageUrl": "https://picsum.photos/seed/project-7/600/400",
+      "imageHint": "lake house solar"
+    },
+    {
+      "id": "portfolio-project-8",
+      "description": "Boutique Hotel Solar",
+      "imageUrl": "https://picsum.photos/seed/project-8/600/400",
+      "imageHint": "hotel solar panels"
+    },
+    {
       "id": "blog-post-thumbnail-1",
       "description": "Abstract image of sun rays and solar panels.",
       "imageUrl": "https://picsum.photos/seed/blog-1/600/400",
@@ -95,6 +113,42 @@
       "description": "A technician cleaning solar panels on a roof.",
       "imageUrl": "https://picsum.photos/seed/blog-4/600/400",
       "imageHint": "solar panel maintenance"
+    },
+    {
+      "id": "service-consultation",
+      "description": "An engineer reviewing blueprints for a solar installation.",
+      "imageUrl": "https://picsum.photos/seed/service-1/600/400",
+      "imageHint": "solar blueprints"
+    },
+    {
+      "id": "service-installation",
+      "description": "Technicians installing solar panels on a residential roof.",
+      "imageUrl": "https://picsum.photos/seed/service-2/600/400",
+      "imageHint": "solar installation"
+    },
+    {
+      "id": "service-maintenance",
+      "description": "A drone inspecting a large array of solar panels.",
+      "imageUrl": "https://picsum.photos/seed/service-3/600/400",
+      "imageHint": "drone inspection"
+    },
+    {
+      "id": "service-financing",
+      "description": "A person signing a document with a calculator and piggy bank nearby.",
+      "imageUrl": "https://picsum.photos/seed/service-4/600/400",
+      "imageHint": "financing signing"
+    },
+    {
+      "id": "service-battery",
+      "description": "A sleek home battery storage unit mounted on a garage wall.",
+      "imageUrl": "https://picsum.photos/seed/service-5/600/400",
+      "imageHint": "home battery"
+    },
+    {
+      "id": "service-audit",
+      "description": "A person using a tablet to analyze a home's energy consumption.",
+      "imageUrl": "https://picsum.photos/seed/service-6/600/400",
+      "imageHint": "energy audit tablet"
     },
     {
       "id": "contact-map",

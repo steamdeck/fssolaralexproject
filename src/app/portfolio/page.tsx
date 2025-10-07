@@ -1,11 +1,16 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Star, StarHalf } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Star, StarHalf, MapPin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const projects = [
   {
     id: 'portfolio-project-1',
+    category: 'residential',
     title: 'Suburban Family Home',
     location: 'Maplewood, NJ',
     testimonial:
@@ -14,6 +19,7 @@ const projects = [
   },
   {
     id: 'portfolio-project-2',
+    category: 'commercial',
     title: 'Downtown Commercial Building',
     location: 'Brooklyn, NY',
     testimonial:
@@ -22,6 +28,7 @@ const projects = [
   },
   {
     id: 'portfolio-project-3',
+    category: 'agricultural',
     title: 'Rural Farm & Barn',
     location: 'Lancaster, PA',
     testimonial:
@@ -30,6 +37,7 @@ const projects = [
   },
   {
     id: 'portfolio-project-4',
+    category: 'residential',
     title: 'Modern Urban Residence',
     location: 'Austin, TX',
     testimonial:
@@ -38,6 +46,7 @@ const projects = [
   },
   {
     id: 'portfolio-project-5',
+    category: 'commercial',
     title: 'Community Center',
     location: 'Boulder, CO',
     testimonial:
@@ -46,10 +55,29 @@ const projects = [
   },
   {
     id: 'portfolio-project-6',
+    category: 'industrial',
     title: 'Industrial Warehouse',
     location: 'Columbus, OH',
     testimonial:
       '"The scale of our warehouse roof was a challenge, but Solaris Hub designed a massive system that has drastically reduced our operating costs. Exceptional work!"',
+    rating: 5,
+  },
+   {
+    id: 'portfolio-project-7',
+    category: 'residential',
+    title: 'Lakefront Vacation Home',
+    location: 'Lake Tahoe, CA',
+    testimonial:
+      '"We wanted to make our vacation home eco-friendly. Solaris Hub installed a fantastic system with battery backup. Now we can enjoy the lake knowing we\'re powered by the sun."',
+    rating: 5,
+  },
+  {
+    id: 'portfolio-project-8',
+    category: 'commercial',
+    title: 'Boutique Hotel',
+    location: 'Miami, FL',
+    testimonial:
+      '"Our guests love that we\'re a green hotel. The solar installation was smooth and the aesthetic integration with our building is perfect. A great investment."',
     rating: 5,
   },
 ];
@@ -57,6 +85,7 @@ const projects = [
 const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 !== 0;
+    const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
     const stars = [];
     for (let i = 0; i < fullStars; i++) {
         stars.push(<Star key={`full-${i}`} className="text-accent fill-accent size-5" />);
@@ -64,10 +93,60 @@ const renderStars = (rating: number) => {
     if (halfStar) {
         stars.push(<StarHalf key="half" className="text-accent fill-accent size-5" />);
     }
+    for (let i = 0; i < emptyStars; i++) {
+        stars.push(<Star key={`empty-${i}`} className="text-accent/30 fill-accent/30 size-5" />);
+    }
     return <div className="flex">{stars}</div>
 }
 
+const ProjectGrid = ({ filter }: { filter: string }) => {
+  const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+
+  return (
+     <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {filteredProjects.map((project) => {
+        const projectImage = PlaceHolderImages.find(
+          (img) => img.id === project.id
+        );
+        return (
+          <Card key={project.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
+            {projectImage && (
+              <div className="relative aspect-video w-full">
+                <Image
+                  src={projectImage.imageUrl}
+                  alt={projectImage.description}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  data-ai-hint={projectImage.imageHint}
+                />
+              </div>
+            )}
+            <CardHeader>
+              <CardTitle>{project.title}</CardTitle>
+              <CardDescription className="flex items-center gap-2 pt-1">
+                <MapPin className="size-4 text-muted-foreground" />
+                {project.location}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-grow flex-col">
+              <blockquote className="flex-grow border-l-4 border-accent pl-4 italic text-muted-foreground">
+                {project.testimonial}
+              </blockquote>
+            </CardContent>
+             <CardFooter className="mt-4 flex items-center">
+                {renderStars(project.rating)}
+              </CardFooter>
+          </Card>
+        );
+      })}
+    </div>
+  );
+};
+
 export default function PortfolioPage() {
+  const categories = ['all', 'residential', 'commercial', 'industrial', 'agricultural'];
+  
   return (
     <div className="bg-background">
       <section className="py-16 md:py-24">
@@ -78,45 +157,40 @@ export default function PortfolioPage() {
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
               We take pride in every project we complete. Explore a selection
-              of our residential and commercial solar installations.
+              of our residential, commercial, and industrial solar installations.
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => {
-              const projectImage = PlaceHolderImages.find(
-                (img) => img.id === project.id
-              );
-              return (
-                <Card key={project.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
-                  {projectImage && (
-                    <div className="relative aspect-video w-full">
-                      <Image
-                        src={projectImage.imageUrl}
-                        alt={projectImage.description}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        data-ai-hint={projectImage.imageHint}
-                      />
-                    </div>
-                  )}
-                  <CardHeader>
-                    <CardTitle>{project.title}</CardTitle>
-                    <CardDescription>{project.location}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex flex-grow flex-col">
-                    <blockquote className="flex-grow border-l-4 border-accent pl-4 italic text-muted-foreground">
-                      {project.testimonial}
-                    </blockquote>
-                    <div className="mt-4 flex items-center">
-                        {renderStars(project.rating)}
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
+          <Tabs defaultValue="all" className="mt-12 w-full">
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-auto max-w-2xl h-auto flex-wrap">
+              {categories.map(category => (
+                <TabsTrigger key={category} value={category} className="capitalize py-2">
+                  {category}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            
+            <div className="mt-8">
+              {categories.map(category => (
+                <TabsContent key={category} value={category}>
+                  <ProjectGrid filter={category} />
+                </TabsContent>
+              ))}
+            </div>
+          </Tabs>
+
+        </div>
+      </section>
+
+      <section className="bg-card py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+            <h2 className="text-3xl font-bold tracking-tight">Inspired by Our Work?</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">Let's discuss how we can bring the power of solar to your home or business. Get a personalized, no-obligation quote from our experts today.</p>
+             <Button asChild size="lg" className="mt-8">
+              <Link href="/contact">
+                Start Your Solar Project
+              </Link>
+            </Button>
         </div>
       </section>
     </div>
