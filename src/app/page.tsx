@@ -104,14 +104,14 @@ export default function Home() {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
-              <div className="relative h-64 w-full overflow-hidden rounded-xl shadow-2xl md:h-auto md:aspect-[16/10]">
+              <div className="relative h-64 w-full overflow-hidden rounded-xl shadow-2xl md:h-auto md:aspect-[16/10] transition-transform duration-300 hover:scale-105">
                 {heroImage && (
                   <Image
                     src={heroImage.imageUrl}
                     alt={heroImage.description}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    className="object-cover"
                     priority
                     data-ai-hint={heroImage.imageHint}
                   />
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {portfolioHighlights.map((project, i) => (
               <ScrollReveal key={project.id} delay={i * 150}>
-                <Card className="overflow-hidden transition-shadow duration-300 hover:shadow-xl group h-full">
+                <Card className="overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full">
                   <div className="relative aspect-video w-full">
                     <Image
                       src={project.imageUrl}
@@ -229,7 +229,7 @@ export default function Home() {
                     <ScrollReveal key={testimonial.name} delay={i * 150}>
                       <Card className="flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
                           <CardHeader className="flex-row gap-4 items-center">
-                              <Avatar data-ai-hint={testimonial.avatarHint}>
+                              <Avatar className="transition-transform duration-300 hover:scale-110" data-ai-hint={testimonial.avatarHint}>
                                   <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                                   <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                               </Avatar>
