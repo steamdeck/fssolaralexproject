@@ -33,6 +33,7 @@ const benefits = [
 const testimonials = [
   {
     name: 'The Sharma Family',
+    location: 'Jaipur, Rajasthan',
     avatar: 'https://picsum.photos/seed/avatar-1/100/100',
     avatarHint: 'indian family photo',
     rating: 5,
@@ -40,6 +41,7 @@ const testimonials = [
   },
   {
     name: 'Gupta Sweets',
+    location: 'Kolkata, West Bengal',
     avatar: 'https://picsum.photos/seed/avatar-2/100/100',
     avatarHint: 'sweet shop storefront',
     rating: 5,
@@ -47,6 +49,7 @@ const testimonials = [
   },
   {
     name: 'Aisha K.',
+    location: 'Hyderabad, Telangana',
     avatar: 'https://picsum.photos/seed/avatar-3/100/100',
     avatarHint: 'woman smiling',
     rating: 5,
@@ -124,22 +127,24 @@ export default function Home() {
 
       <section id="benefits" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <ScrollReveal className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary">The Surya Solar Advantage</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-              Why Go Solar in India?
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Discover the incredible advantages of switching to solar energy for
-              your home or business. It's more than just panels; it's a lifestyle change.
-            </p>
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-wider text-primary">The Surya Solar Advantage</p>
+              <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+                Why Go Solar in India?
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Discover the incredible advantages of switching to solar energy for
+                your home or business. It's more than just panels; it's a lifestyle change.
+              </p>
+            </div>
           </ScrollReveal>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((benefit, i) => (
               <ScrollReveal key={benefit.title} delay={i * 150}>
-                <Card className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
+                <Card className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full bg-background/50">
                   <CardHeader>
-                    <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-background">
+                    <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-card shadow-md">
                       {benefit.icon}
                     </div>
                     <CardTitle className="mt-4">{benefit.title}</CardTitle>
@@ -174,24 +179,26 @@ export default function Home() {
       
       <section id="portfolio" className="w-full py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <ScrollReveal className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Our Recent Work
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              We take pride in every installation. Here are a few of our successful projects that are now powering homes and businesses with clean energy across India.
-            </p>
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                Our Recent Work
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                We take pride in every installation. Here are a few of our successful projects that are now powering homes and businesses with clean energy across India.
+              </p>
+            </div>
           </ScrollReveal>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {portfolioHighlights.map((project, i) => (
               <ScrollReveal key={project.id} delay={i * 150}>
-                <Card className="overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full">
+                <Card className="overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full bg-card">
                   <div className="relative aspect-video w-full">
                     <Image
                       src={project.imageUrl}
                       alt={project.description}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       data-ai-hint={project.imageHint}
                     />
@@ -220,29 +227,32 @@ export default function Home() {
 
       <section id="testimonials" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-            <ScrollReveal className="mx-auto max-w-3xl text-center">
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What Our Customers Say</h2>
                 <p className="mt-4 text-lg text-muted-foreground">We're proud to have helped thousands of clients across India embrace solar energy. Here's what some of them have to say.</p>
-            </ScrollReveal>
+            </div>
+          </ScrollReveal>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {testimonials.map((testimonial, i) => (
                     <ScrollReveal key={testimonial.name} delay={i * 150}>
-                      <Card className="flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
-                          <CardHeader className="flex-row gap-4 items-center">
+                      <Card className="flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full bg-background/50">
+                          <CardContent className="pt-6">
+                              <blockquote className="text-muted-foreground italic border-l-4 border-accent pl-4">
+                                  {testimonial.comment}
+                              </blockquote>
+                          </CardContent>
+                          <CardHeader className="flex-row gap-4 items-center pt-0">
                               <Avatar className="transition-transform duration-300 hover:scale-110" data-ai-hint={testimonial.avatarHint}>
                                   <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                                   <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                               </Avatar>
                               <div>
-                                  <CardTitle>{testimonial.name}</CardTitle>
+                                  <CardTitle className="text-base">{testimonial.name}</CardTitle>
+                                   <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                                   {renderStars(testimonial.rating)}
                               </div>
                           </CardHeader>
-                          <CardContent>
-                              <blockquote className="text-muted-foreground italic border-l-4 border-accent pl-4">
-                                  {testimonial.comment}
-                              </blockquote>
-                          </CardContent>
                       </Card>
                     </ScrollReveal>
                 ))}
@@ -252,18 +262,20 @@ export default function Home() {
 
       <section id="blog" className="w-full bg-background py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <ScrollReveal className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              From Our Blog
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Stay updated with the latest in solar energy news, tips, and company updates.
-            </p>
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                From Our Blog
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Stay updated with the latest in solar energy news, tips, and company updates.
+              </p>
+            </div>
           </ScrollReveal>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {latestPosts.map((post, i) => (
               <ScrollReveal key={post.slug} delay={i * 150}>
-                <Card className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full">
+                <Card className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl group h-full bg-card">
                   <Link href={`/blog/${post.slug}`} className="block">
                     <div className="relative aspect-video w-full overflow-hidden rounded-t-lg">
                       {post.imageUrl && (
@@ -271,7 +283,7 @@ export default function Home() {
                           src={post.imageUrl}
                           alt={`Thumbnail for ${post.title}`}
                           fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="object-cover transition-transform duration-300 group-hover:scale-110"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           data-ai-hint={post.imageHint}
                         />
@@ -282,12 +294,15 @@ export default function Home() {
                     <CardTitle className="leading-tight group-hover:text-primary transition-colors duration-300">
                       <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </CardTitle>
+                     <p className="text-sm text-muted-foreground pt-1">
+                      {post.date} &bull; {post.author}
+                    </p>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
                   </CardContent>
                   <div className="p-6 pt-0">
-                    <Button asChild variant="link" className="p-0 h-auto group/link">
+                    <Button asChild variant="link" className="p-0 h-auto group/link text-primary">
                       <Link href={`/blog/${post.slug}`}>
                         Read More <ArrowRight className="ml-2 size-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                       </Link>
