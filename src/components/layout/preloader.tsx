@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -23,7 +24,7 @@ export function Preloader() {
       )}
     >
       <div className="animate-pulse">
-        <Logo width={250} height={83} />
+        <Logo width={80} height={80} />
       </div>
     </div>
   );

@@ -20,8 +20,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 max-w-7xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Logo width={120} height={40}/>
-          <span className="sr-only">GH Solar</span>
+          <Logo width={40} height={40}/>
+          <span className="hidden font-bold sm:inline-block">GH Solar</span>
         </Link>
 
         <nav className="hidden gap-6 md:flex">
@@ -60,8 +60,8 @@ export function SiteHeader() {
                   className="flex items-center space-x-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Logo width={120} height={40}/>
-                  <span className="sr-only">GH Solar</span>
+                  <Logo width={40} height={40}/>
+                  <span className="font-bold">GH Solar</span>
                 </Link>
                 <div className="flex flex-col gap-4">
                   {navLinks.map((link) => (

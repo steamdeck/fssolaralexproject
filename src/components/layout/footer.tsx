@@ -18,8 +18,9 @@ export function SiteFooter() {
       <div className="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4 md:col-span-1">
-            <Link href="/" className="flex items-center space-x-2">
-              <Logo width={150} height={50} />
+            <Link href="/" className="flex items-center space-x-3">
+              <Logo width={40} height={40} />
+              <span className="text-xl font-bold">GH Solar</span>
             </Link>
             <p className="text-sm text-muted-foreground pt-2">
               Powering a brighter, cleaner future with solar energy.
