@@ -23,7 +23,7 @@ export function Preloader() {
       )}
     >
       <div className="animate-pulse">
-        <Logo width={128} height={128} />
+        <Logo width={250} height={83} />
       </div>
     </div>
   );
