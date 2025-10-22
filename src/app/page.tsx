@@ -32,25 +32,25 @@ const benefits = [
 
 const testimonials = [
   {
-    name: 'The Johnson Family',
+    name: 'The Sharma Family',
     avatar: 'https://picsum.photos/seed/avatar-1/100/100',
-    avatarHint: 'family photo',
+    avatarHint: 'indian family photo',
     rating: 5,
-    comment: '"The entire process with Solaris Hub was seamless. From the initial consultation to the final installation, the team was professional and communicative. Our energy bills have never been lower!"'
+    comment: '"The entire process with Surya Solar was seamless. From the initial consultation to the final installation, the team was professional and communicative. Our energy bills have never been lower!"'
   },
   {
-    name: 'Main St. Bakery',
+    name: 'Gupta Sweets',
     avatar: 'https://picsum.photos/seed/avatar-2/100/100',
-    avatarHint: 'bakery storefront',
+    avatarHint: 'sweet shop storefront',
     rating: 5,
-    comment: '"As a small business, cutting operational costs is crucial. Solaris Hub provided a commercial solution that has drastically reduced our electricity expenses, allowing us to invest more back into our business."'
+    comment: '"As a small business, cutting operational costs is crucial. Surya Solar provided a commercial solution that has drastically reduced our electricity expenses, allowing us to invest more back into our business."'
   },
   {
-    name: 'Sarah L.',
+    name: 'Aisha K.',
     avatar: 'https://picsum.photos/seed/avatar-3/100/100',
     avatarHint: 'woman smiling',
     rating: 5,
-    comment: '"I was so impressed with the team\'s knowledge and passion for renewable energy. They helped me understand all the incentives and made going solar an easy and affordable decision. I couldn\'t be happier!"'
+    comment: '"I was so impressed with the team\'s knowledge and passion for renewable energy. They helped me understand all the government subsidies and made going solar an easy and affordable decision. I couldn\'t be happier!"'
   }
 ];
 
@@ -84,12 +84,12 @@ export default function Home() {
             <ScrollReveal>
               <div className="space-y-6">
                 <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-                  Power Your Future with Solaris Hub
+                  Power Your Future with Surya Solar
                 </h1>
                 <p className="text-lg text-muted-foreground">
                   Your trusted partner in harnessing the power of the sun. We provide
                   end-to-end solar solutions for a brighter, cleaner, and more
-                  sustainable tomorrow.
+                  sustainable India.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <Button asChild size="lg" className="group">
@@ -125,9 +125,9 @@ export default function Home() {
       <section id="benefits" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary">The Solaris Advantage</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary">The Surya Solar Advantage</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-              Why Go Solar?
+              Why Go Solar in India?
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Discover the incredible advantages of switching to solar energy for
@@ -179,7 +179,7 @@ export default function Home() {
               Our Recent Work
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We take pride in every installation. Here are a few of our successful projects that are now powering homes and businesses with clean energy.
+              We take pride in every installation. Here are a few of our successful projects that are now powering homes and businesses with clean energy across India.
             </p>
           </ScrollReveal>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -222,7 +222,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
             <ScrollReveal className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What Our Customers Say</h2>
-                <p className="mt-4 text-lg text-muted-foreground">We're proud to have helped thousands of clients embrace solar energy. Here's what some of them have to say.</p>
+                <p className="mt-4 text-lg text-muted-foreground">We're proud to have helped thousands of clients across India embrace solar energy. Here's what some of them have to say.</p>
             </ScrollReveal>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {testimonials.map((testimonial, i) => (

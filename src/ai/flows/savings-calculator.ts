@@ -1,3 +1,4 @@
+
 // savings-calculator.ts
 'use server';
 
@@ -16,18 +17,18 @@ const SavingsCalculatorInputSchema = z.object({
   energyConsumption: z
     .number()
     .describe('Monthly energy consumption in kilowatt-hours (kWh).'),
-  location: z.string().describe('City and state of the user.'),
+  location: z.string().describe('City and state in India of the user.'),
   currentEnergyCost: z
     .number()
     .optional()
-    .describe('Current cost per kWh of energy in USD.'),
+    .describe('Current cost per kWh of energy in Rupees (₹).'),
 });
 export type SavingsCalculatorInput = z.infer<typeof SavingsCalculatorInputSchema>;
 
 const SavingsCalculatorOutputSchema = z.object({
   estimatedSavings: z
     .number()
-    .describe('Estimated monthly savings in USD after switching to solar.'),
+    .describe('Estimated monthly savings in Rupees (₹) after switching to solar.'),
   environmentalImpact: z
     .string()
     .describe(
@@ -49,7 +50,7 @@ const prompt = ai.definePrompt({
   name: 'savingsCalculatorPrompt',
   input: {schema: SavingsCalculatorInputSchema},
   output: {schema: SavingsCalculatorOutputSchema},
-  prompt: `You are an expert in renewable energy economics and environmental impact.
+  prompt: `You are an expert in renewable energy economics and environmental impact in India.
 
 You will calculate the potential savings and environmental impact of switching to solar panels for a user.
 
@@ -57,13 +58,13 @@ Use the following information:
 
 Location: {{{location}}}
 Energy Consumption: {{{energyConsumption}}} kWh/month
-Current Energy Cost: {{{currentEnergyCost}}} USD/kWh (if available)
+Current Energy Cost: {{{currentEnergyCost}}} ₹/kWh (if available)
 
-Provide a recommendation for the type and size of solar panel system that would be suitable for the user.
+Provide a recommendation for the type and size of solar panel system that would be suitable for the user's home in India.
 
-Estimate the monthly savings in USD after switching to solar.
+Estimate the monthly savings in Rupees (₹) after switching to solar.
 
-Describe the environmental impact of switching to solar, including carbon emissions reduction.
+Describe the environmental impact of switching to solar, including carbon emissions reduction in tonnes of CO2.
 
 Ensure that the estimatedSavings field is a number.
 `,

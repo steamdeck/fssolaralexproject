@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Logo } from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
@@ -19,7 +20,7 @@ export function SiteFooter() {
           <div className="space-y-4 md:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
               <Logo width={40} height={40} />
-              <span className="text-xl font-bold">GH Solar</span>
+              <span className="text-xl font-bold">Surya Solar</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Powering a brighter, cleaner future with solar energy.
@@ -98,7 +99,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} GH Solar. All rights reserved.
+            &copy; {new Date().getFullYear()} Surya Solar. All rights reserved.
           </p>
         </div>
       </div>

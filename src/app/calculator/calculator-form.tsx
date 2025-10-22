@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useActionState } from 'react';
@@ -62,7 +63,7 @@ export function CalculatorForm() {
                     <Input
                       name="energyConsumption"
                       type="number"
-                      placeholder="e.g., 750"
+                      placeholder="e.g., 300"
                       required
                     />
                   </FormControl>
@@ -77,7 +78,7 @@ export function CalculatorForm() {
                 <FormItem>
                   <FormLabel>Location (City, State)</FormLabel>
                   <FormControl>
-                    <Input name="location" placeholder="e.g., San Diego, CA" required />
+                    <Input name="location" placeholder="e.g., Mumbai, Maharashtra" required />
                   </FormControl>
                   <FormDescription>
                     Helps us estimate solar potential in your area.
@@ -95,11 +96,11 @@ export function CalculatorForm() {
                     name="currentEnergyCost"
                     type="number"
                     step="0.01"
-                    placeholder="e.g., 0.15"
+                    placeholder="e.g., 8.50"
                   />
                 </FormControl>
                 <FormDescription>
-                  Your cost in USD per kWh, if you know it.
+                  Your cost in Rupees (₹) per kWh, if you know it.
                 </FormDescription>
                 {state.fieldErrors?.currentEnergyCost && (
                     <FormMessage>{state.fieldErrors.currentEnergyCost[0]}</FormMessage>
@@ -127,7 +128,7 @@ export function CalculatorForm() {
                     </CardHeader>
                     <CardContent>
                         <div className="text-5xl font-bold">
-                            ${state.result.estimatedSavings.toFixed(2)}
+                            ₹{state.result.estimatedSavings.toFixed(2)}
                         </div>
                         <p className="text-xs text-primary-foreground/80">
                             Based on your energy usage and location.

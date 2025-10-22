@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,11 +14,11 @@ export default function BlogPage() {
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              Solaris Hub Blog
+              Surya Solar Blog
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
               Your source for the latest news, tips, and insights in the world
-              of solar energy.
+              of solar energy in India.
             </p>
           </ScrollReveal>
 

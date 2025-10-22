@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -38,11 +39,11 @@ export default function ContactPage() {
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="first-name">First Name</Label>
-                      <Input id="first-name" placeholder="John" />
+                      <Input id="first-name" placeholder="Rohan" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="last-name">Last Name</Label>
-                      <Input id="last-name" placeholder="Doe" />
+                      <Input id="last-name" placeholder="Mehta" />
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -50,12 +51,12 @@ export default function ContactPage() {
                     <Input
                       id="email"
                       type="email"
-                      placeholder="john.doe@example.com"
+                      placeholder="rohan.mehta@example.com"
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" type="tel" placeholder="(123) 456-7890" />
+                    <Input id="phone" type="tel" placeholder="+91 98765 43210" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
@@ -87,7 +88,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Solar Way, Sunville, CA 90210
+                        123 Solar Marg, Koramangala, Bengaluru, Karnataka 560095
                       </p>
                     </div>
                   </div>
@@ -97,8 +98,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Phone</h3>
-                      <a href="tel:+1800555SOLAR" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
-                        +1 (800) 555-SOLAR
+                      <a href="tel:+918040001000" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
+                        +91 80 4000 1000
                       </a>
                     </div>
                   </div>
@@ -108,8 +109,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <a href="mailto:contact@solarishub.com" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
-                        contact@solarishub.com
+                      <a href="mailto:contact@suryasolar.in" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
+                        contact@suryasolar.in
                       </a>
                     </div>
                   </div>

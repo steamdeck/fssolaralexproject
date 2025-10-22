@@ -13,16 +13,16 @@ const projects = [
     id: 'portfolio-project-1',
     category: 'residential',
     title: 'Suburban Family Home',
-    location: 'Maplewood, NJ',
+    location: 'Indiranagar, Bengaluru',
     testimonial:
-      '"Solaris Hub made the entire process so easy. Our energy bills have been cut in half, and we feel great about reducing our carbon footprint!"',
+      '"Surya Solar made the entire process so easy. Our energy bills have been cut in half, and we feel great about reducing our carbon footprint!"',
     rating: 5,
   },
   {
     id: 'portfolio-project-2',
     category: 'commercial',
-    title: 'Downtown Commercial Building',
-    location: 'Brooklyn, NY',
+    title: 'Office Building in BKC',
+    location: 'Bandra Kurla Complex, Mumbai',
     testimonial:
       '"The rooftop installation was professional and fast. The energy savings for our business have been substantial. Highly recommend their commercial services."',
     rating: 5,
@@ -31,7 +31,7 @@ const projects = [
     id: 'portfolio-project-3',
     category: 'agricultural',
     title: 'Rural Farm & Barn',
-    location: 'Lancaster, PA',
+    location: 'Hoshiarpur, Punjab',
     testimonial:
       '"Powering our farm with solar has been a game-changer. The team understood our unique energy needs and delivered a robust system that powers all our operations."',
     rating: 5,
@@ -40,7 +40,7 @@ const projects = [
     id: 'portfolio-project-4',
     category: 'residential',
     title: 'Modern Urban Residence',
-    location: 'Austin, TX',
+    location: 'Jubilee Hills, Hyderabad',
     testimonial:
       '"The sleek, low-profile panels look amazing on our modern home. We are now energy independent and couldn\'t be happier with the result."',
     rating: 4.5,
@@ -49,34 +49,34 @@ const projects = [
     id: 'portfolio-project-5',
     category: 'commercial',
     title: 'Community Center',
-    location: 'Boulder, CO',
+    location: 'Anna Nagar, Chennai',
     testimonial:
-      '"Solaris Hub helped our non-profit community center go green. Their guidance on grants and financing was invaluable. A true community partner."',
+      '"Surya Solar helped our non-profit community center go green. Their guidance on grants and financing was invaluable. A true community partner."',
     rating: 5,
   },
   {
     id: 'portfolio-project-6',
     category: 'industrial',
     title: 'Industrial Warehouse',
-    location: 'Columbus, OH',
+    location: 'Pimpri-Chinchwad, Pune',
     testimonial:
-      '"The scale of our warehouse roof was a challenge, but Solaris Hub designed a massive system that has drastically reduced our operating costs. Exceptional work!"',
+      '"The scale of our warehouse roof was a challenge, but Surya Solar designed a massive system that has drastically reduced our operating costs. Exceptional work!"',
     rating: 5,
   },
    {
     id: 'portfolio-project-7',
     category: 'residential',
     title: 'Lakefront Vacation Home',
-    location: 'Lake Tahoe, CA',
+    location: 'Udaipur, Rajasthan',
     testimonial:
-      '"We wanted to make our vacation home eco-friendly. Solaris Hub installed a fantastic system with battery backup. Now we can enjoy the lake knowing we\'re powered by the sun."',
+      '"We wanted to make our vacation home eco-friendly. Surya Solar installed a fantastic system with battery backup. Now we can enjoy the lake knowing we\'re powered by the sun."',
     rating: 5,
   },
   {
     id: 'portfolio-project-8',
     category: 'commercial',
     title: 'Boutique Hotel',
-    location: 'Miami, FL',
+    location: 'Candolim, Goa',
     testimonial:
       '"Our guests love that we\'re a green hotel. The solar installation was smooth and the aesthetic integration with our building is perfect. A great investment."',
     rating: 5,
@@ -160,7 +160,7 @@ export default function PortfolioPage() {
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
               We take pride in every project we complete. Explore a selection
-              of our residential, commercial, and industrial solar installations.
+              of our residential, commercial, and industrial solar installations across India.
             </p>
           </ScrollReveal>
 

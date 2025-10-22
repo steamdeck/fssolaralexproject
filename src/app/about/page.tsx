@@ -9,27 +9,27 @@ import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
 const teamMembers = [
   {
-    name: 'Jane Doe',
+    name: 'Priya Sharma',
     title: 'Founder & CEO',
-    bio: 'With over 20 years in renewable energy, Jane founded Solaris Hub to make sustainable power accessible to all.',
+    bio: 'With over 20 years in renewable energy, Priya founded Surya Solar to make sustainable power accessible to all.',
     imageId: 'team-member-1',
   },
   {
-    name: 'John Smith',
+    name: 'Rohan Mehta',
     title: 'Lead Engineer',
-    bio: 'John is the mastermind behind our innovative solar solutions, ensuring every system is efficient and reliable.',
+    bio: 'Rohan is the mastermind behind our innovative solar solutions, ensuring every system is efficient and reliable.',
     imageId: 'team-member-2',
   },
   {
-    name: 'Emily White',
+    name: 'Ananya Gupta',
     title: 'Head of Operations',
-    bio: 'Emily ensures that every project, from consultation to installation, runs smoothly and exceeds client expectations.',
+    bio: 'Ananya ensures that every project, from consultation to installation, runs smoothly and exceeds client expectations.',
     imageId: 'team-member-3',
   },
   {
-    name: 'Michael Brown',
+    name: 'Vikram Singh',
     title: 'Director of Sales',
-    bio: 'Michael and his team are dedicated to helping clients find the perfect solar solution for their needs and budget.',
+    bio: 'Vikram and his team are dedicated to helping clients find the perfect solar solution for their needs and budget.',
     imageId: 'team-member-4',
   },
 ];
@@ -51,11 +51,11 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              About Solaris Hub
+              About Surya Solar
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              We are a passionate team of experts dedicated to accelerating the
-              world&apos;s transition to sustainable energy, one solar panel at a time.
+              We are a passionate team of experts dedicated to accelerating
+              India&apos;s transition to sustainable energy, one solar panel at a time.
             </p>
           </ScrollReveal>
         </div>
@@ -84,16 +84,16 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight">Our Story</h2>
               <p className="mt-4 text-muted-foreground">
-                Solaris Hub was founded in 2010 with a simple yet powerful
+                Surya Solar was founded in 2010 with a simple yet powerful
                 mission: to make clean, renewable solar energy an easy and
-                affordable choice for everyone. We saw the potential of the sun not just
+                affordable choice for every Indian household and business. We saw the potential of the sun not just
                 as a power source, but as a way to build a more sustainable future for
-                our communities and our planet. 
+                our communities and our nation. 
               </p>
                <p className="mt-4 text-muted-foreground">
                 Starting with a small team of passionate
-                engineers in a tiny garage, we&apos;ve grown into a leading provider of solar solutions,
-                having helped thousands of homeowners and businesses make the switch to
+                engineers in a small workshop in Bengaluru, we&apos;ve grown into a leading provider of solar solutions,
+                having helped thousands of homeowners and businesses across the country make the switch to
                 solar. Our journey has been one of innovation, dedication, and an unwavering commitment to our founding principles.
               </p>
             </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
              <div className="relative h-64 w-full overflow-hidden rounded-xl shadow-lg md:h-80">
                 <Image
                     src="https://picsum.photos/seed/about-vision/800/600"
-                    alt="A vision of a futuristic city powered by solar energy"
+                    alt="A vision of a futuristic city in India powered by solar energy"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-300 hover:scale-105"
