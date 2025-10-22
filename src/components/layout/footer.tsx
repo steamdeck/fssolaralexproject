@@ -18,8 +18,8 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4 md:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
-              <Logo className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">Solaris Hub</span>
+              <Logo width={40} height={40} />
+              <span className="text-xl font-bold">GH Solar</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Powering a brighter, cleaner future with solar energy.
@@ -98,7 +98,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Solaris Hub. All rights reserved.
+            &copy; {new Date().getFullYear()} GH Solar. All rights reserved.
           </p>
         </div>
       </div>
