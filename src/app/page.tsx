@@ -37,7 +37,7 @@ const testimonials = [
     avatar: 'https://picsum.photos/seed/avatar-1/100/100',
     avatarHint: 'indian family photo',
     rating: 5,
-    comment: '"The entire process with Surya Solar was seamless. From the initial consultation to the final installation, the team was professional and communicative. Our energy bills have never been lower!"'
+    comment: '"The entire process with GH Solar was seamless. From the initial consultation to the final installation, the team was professional and communicative. Our energy bills have never been lower!"'
   },
   {
     name: 'Gupta Sweets',
@@ -45,7 +45,7 @@ const testimonials = [
     avatar: 'https://picsum.photos/seed/avatar-2/100/100',
     avatarHint: 'sweet shop storefront',
     rating: 5,
-    comment: '"As a small business, cutting operational costs is crucial. Surya Solar provided a commercial solution that has drastically reduced our electricity expenses, allowing us to invest more back into our business."'
+    comment: '"As a small business, cutting operational costs is crucial. GH Solar provided a commercial solution that has drastically reduced our electricity expenses, allowing us to invest more back into our business."'
   },
   {
     name: 'Aisha K.',
@@ -87,7 +87,7 @@ export default function Home() {
             <ScrollReveal>
               <div className="space-y-6">
                 <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-                  Power Your Future with Surya Solar
+                  Power Your Future with GH Solar
                 </h1>
                 <p className="text-lg text-muted-foreground">
                   Your trusted partner in harnessing the power of the sun. We provide
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary">The Surya Solar Advantage</p>
+              <p className="text-sm font-semibold uppercase tracking-wider text-primary">The GH Solar Advantage</p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
                 Why Go Solar in India?
               </h2>

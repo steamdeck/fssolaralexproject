@@ -21,7 +21,7 @@ export function SiteHeader() {
       <div className="container flex h-16 max-w-7xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Logo width={40} height={40} />
-          <span className="font-bold">Surya Solar</span>
+          <span className="font-bold">GH Solar</span>
         </Link>
 
         <nav className="hidden gap-6 md:flex">
@@ -61,7 +61,7 @@ export function SiteHeader() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <Logo width={40} height={40} />
-                  <span className="font-bold">Surya Solar</span>
+                  <span className="font-bold">GH Solar</span>
                 </Link>
                 <div className="flex flex-col gap-4">
                   {navLinks.map((link) => (

@@ -11,7 +11,7 @@ const teamMembers = [
   {
     name: 'Priya Sharma',
     title: 'Founder & CEO',
-    bio: 'With over 20 years in renewable energy, Priya founded Surya Solar to make sustainable power accessible to all.',
+    bio: 'With over 20 years in renewable energy, Priya founded GH Solar to make sustainable power accessible to all.',
     imageId: 'team-member-1',
   },
   {
@@ -51,7 +51,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              About Surya Solar
+              About GH Solar
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
               We are a passionate team of experts dedicated to accelerating
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight">Our Story</h2>
               <p className="mt-4 text-muted-foreground">
-                Surya Solar was founded in 2010 with a simple yet powerful
+                GH Solar was founded in 2010 with a simple yet powerful
                 mission: to make clean, renewable solar energy an easy and
                 affordable choice for every Indian household and business. We saw the potential of the sun not just
                 as a power source, but as a way to build a more sustainable future for

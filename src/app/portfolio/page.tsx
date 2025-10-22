@@ -15,7 +15,7 @@ const projects = [
     title: 'Suburban Family Home',
     location: 'Indiranagar, Bengaluru',
     testimonial:
-      '"Surya Solar made the entire process so easy. Our energy bills have been cut in half, and we feel great about reducing our carbon footprint!"',
+      '"GH Solar made the entire process so easy. Our energy bills have been cut in half, and we feel great about reducing our carbon footprint!"',
     rating: 5,
   },
   {
@@ -51,7 +51,7 @@ const projects = [
     title: 'Community Center',
     location: 'Anna Nagar, Chennai',
     testimonial:
-      '"Surya Solar helped our non-profit community center go green. Their guidance on grants and financing was invaluable. A true community partner."',
+      '"GH Solar helped our non-profit community center go green. Their guidance on grants and financing was invaluable. A true community partner."',
     rating: 5,
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     title: 'Industrial Warehouse',
     location: 'Pimpri-Chinchwad, Pune',
     testimonial:
-      '"The scale of our warehouse roof was a challenge, but Surya Solar designed a massive system that has drastically reduced our operating costs. Exceptional work!"',
+      '"The scale of our warehouse roof was a challenge, but GH Solar designed a massive system that has drastically reduced our operating costs. Exceptional work!"',
     rating: 5,
   },
    {
@@ -69,7 +69,7 @@ const projects = [
     title: 'Lakefront Vacation Home',
     location: 'Udaipur, Rajasthan',
     testimonial:
-      '"We wanted to make our vacation home eco-friendly. Surya Solar installed a fantastic system with battery backup. Now we can enjoy the lake knowing we\'re powered by the sun."',
+      '"We wanted to make our vacation home eco-friendly. GH Solar installed a fantastic system with battery backup. Now we can enjoy the lake knowing we\'re powered by the sun."',
     rating: 5,
   },
   {

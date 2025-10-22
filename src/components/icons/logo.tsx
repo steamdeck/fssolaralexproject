@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import type { SVGProps } from 'react';
 
@@ -6,7 +7,7 @@ export function Logo(props: Omit<SVGProps<SVGSVGElement>, 'width' | 'height'> & 
   return (
       <Image
         src="/logo.png"
-        alt="Surya Solar Logo"
+        alt="GH Solar Logo"
         width={width}
         height={height}
         className={className}

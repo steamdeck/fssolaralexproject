@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Environmental Impact</h2>
       <p>Beyond the financial savings, going solar is a powerful way to reduce your carbon footprint. Traditional electricity in India is often generated from coal, which releases harmful greenhouse gases. Solar power, on the other hand, is a clean, green energy source that helps combat climate change.</p>
       <h2>The Installation Process</h2>
-      <p>Our team at Surya Solar makes the transition seamless. It starts with a free consultation to assess your energy needs and property. We then design a custom system tailored to you, handle all the permits, and complete the installation with our certified professionals. In no time, you'll be producing your own clean energy.</p>
+      <p>Our team at GH Solar makes the transition seamless. It starts with a free consultation to assess your energy needs and property. We then design a custom system tailored to you, handle all the permits, and complete the installation with our certified professionals. In no time, you'll be producing your own clean energy.</p>
     `,
   },
   {
@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>EMI Options:</strong> We partner with financial institutions to provide easy EMI options, making the purchase as simple as buying any other home appliance.</li>
         <li><strong>Home Improvement Loans:</strong> You can also leverage your existing home loan or apply for a top-up to finance your solar project.</li>
       </ul>
-      <p>Our experts at Surya Solar can walk you through all the available options and help you find the best financial path to your energy independence.</p>
+      <p>Our experts at GH Solar can walk you through all the available options and help you find the best financial path to your energy independence.</p>
     `,
   },
   {
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
       <p>Over time, dust, pollen, bird droppings, and other debris can accumulate on your panels, which can significantly reduce the amount of sunlight they absorb and decrease their efficiency. Regular cleaning, especially before and after the monsoon season, can restore their performance.</p>
       <h2>Professional Inspections</h2>
       <p>While you can handle basic cleaning, it's a good idea to have a professional inspection every year or two. A certified technician can check for any potential issues with the wiring, mounting, and inverters that you might not be able to see. They can ensure all components are functioning correctly and safely, which is crucial for the system's longevity.</p>
-      <p>At Surya Solar, we offer comprehensive Annual Maintenance Contracts (AMCs) to protect your investment and keep your system running at peak performance for its entire lifespan, ensuring you maximize your energy production and savings.</p>
+      <p>At GH Solar, we offer comprehensive Annual Maintenance Contracts (AMCs) to protect your investment and keep your system running at peak performance for its entire lifespan, ensuring you maximize your energy production and savings.</p>
     `,
   },
 ];

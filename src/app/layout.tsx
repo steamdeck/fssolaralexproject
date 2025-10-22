@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -11,9 +12,9 @@ import { ScrollGradientBackground } from '@/components/layout/scroll-gradient-ba
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'Solaris Hub - Powering a Brighter Future',
+  title: 'GH Solar - Powering a Brighter Future',
   description:
-    'Solaris Hub offers top-tier solar panel solutions, from consultation and installation to maintenance and financing. Switch to clean, renewable energy today.',
+    'GH Solar offers top-tier solar panel solutions, from consultation and installation to maintenance and financing. Switch to clean, renewable energy today.',
 };
 
 export default function RootLayout({

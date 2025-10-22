@@ -109,8 +109,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <a href="mailto:contact@suryasolar.in" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
-                        contact@suryasolar.in
+                      <a href="mailto:contact@ghsolar.in" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
+                        contact@ghsolar.in
                       </a>
                     </div>
                   </div>
