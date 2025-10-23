@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 import { Logo } from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { navLinks } from './nav-links';
 
@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 max-w-7xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Logo width={120}/>
+          <Logo width={100} height={100}/>
           <span className="sr-only hidden font-bold sm:inline-block">GH Solar</span>
         </Link>
 
@@ -54,13 +54,14 @@ export function SiteHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
               <div className="flex flex-col gap-6">
                 <Link
                   href="/"
                   className="flex items-center space-x-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Logo width={120}/>
+                  <Logo width={100} height={100}/>
                   <span className="sr-only font-bold">GH Solar</span>
                 </Link>
                 <div className="flex flex-col gap-4">
