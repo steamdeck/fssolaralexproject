@@ -10,19 +10,19 @@
     --card-foreground: 80 30% 10%;
     --popover: 90 60% 100%;
     --popover-foreground: 80 30% 10%;
-    --primary: 211 96% 54%;
+    --primary: 122 39% 49%; /* #4CAF50 */
     --primary-foreground: 90 0% 100%;
     --secondary: 80 30% 96%;
     --secondary-foreground: 80 30% 10%;
     --muted: 80 30% 96%;
     --muted-foreground: 80 10% 40%;
-    --accent: 45 100% 50%;
+    --accent: 54 96% 58%; /* #F9D423 */
     --accent-foreground: 50 100% 15%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
     --border: 80 20% 90%;
     --input: 80 20% 90%;
-    --ring: 211 96% 54%;
+    --ring: 122 39% 49%;
     --radius: 0.5rem;
     --chart-1: 88 56% 45%;
     --chart-2: 80 60% 50%;
@@ -38,19 +38,19 @@
     --card-foreground: 80 20% 95%;
     --popover: 90 10% 8%;
     --popover-foreground: 80 20% 95%;
-    --primary: 211 96% 58%;
+    --primary: 122 39% 55%;
     --primary-foreground: 90 0% 100%;
     --secondary: 90 15% 15%;
     --secondary-foreground: 80 20% 95%;
     --muted: 90 15% 15%;
     --muted-foreground: 80 10% 60%;
-    --accent: 45 98% 65%;
+    --accent: 54 96% 62%;
     --accent-foreground: 50 100% 15%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 90 15% 20%;
     --input: 90 15% 20%;
-    --ring: 211 96% 58%;
+    --ring: 122 39% 55%;
     --chart-1: 88 56% 50%;
     --chart-2: 80 60% 55%;
     --chart-3: 70 50% 55%;
@@ -82,7 +82,7 @@
 
 @layer utilities {
   .animated-gradient {
-    background: linear-gradient(-45deg, #f7971e, #ffd200, #56ccf2, #2e90fa);
+    background: linear-gradient(-45deg, #f7971e, #ffd200, #56ccf2);
     background-size: 400% 400%;
     animation: gradient-animation 15s ease infinite;
   }
