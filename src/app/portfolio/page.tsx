@@ -165,7 +165,7 @@ export default function PortfolioPage() {
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <Tabs defaultValue="all" className="mt-12 w-full">
+            <Tabs defaultValue="all" className="mt-12 md:mt-16 w-full">
               <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-auto max-w-2xl h-auto flex-wrap">
                 {categories.map(category => (
                   <TabsTrigger key={category} value={category} className="capitalize py-2">
@@ -202,3 +202,5 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
+    

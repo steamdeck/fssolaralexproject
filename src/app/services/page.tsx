@@ -75,7 +75,7 @@ export default function ServicesPage() {
             </p>
           </ScrollReveal>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 md:mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => {
               const serviceImage = PlaceHolderImages.find(img => img.id === service.imageId);
               return (
@@ -131,3 +131,5 @@ export default function ServicesPage() {
     </div>
   );
 }
+
+    

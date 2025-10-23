@@ -25,7 +25,7 @@ export default function ContactPage() {
             </p>
           </ScrollReveal>
 
-          <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="mt-12 md:mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             <ScrollReveal>
               <div className="space-y-8">
                 <div>
@@ -135,3 +135,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+    

@@ -22,7 +22,7 @@ export default function BlogPage() {
             </p>
           </ScrollReveal>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 md:mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post, i) => (
               <ScrollReveal key={post.slug} delay={i * 150}>
                 <Card className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
@@ -65,3 +65,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

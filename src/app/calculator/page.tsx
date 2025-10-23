@@ -1,3 +1,4 @@
+
 import { CalculatorForm } from './calculator-form';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
@@ -16,7 +17,7 @@ export default function CalculatorPage() {
               custom estimate for you.
             </p>
           </ScrollReveal>
-          <ScrollReveal className="mx-auto mt-16 max-w-4xl" delay={200}>
+          <ScrollReveal className="mx-auto mt-12 md:mt-16 max-w-4xl" delay={200}>
             <CalculatorForm />
           </ScrollReveal>
         </div>
@@ -24,3 +25,5 @@ export default function CalculatorPage() {
     </div>
   );
 }
+
+    

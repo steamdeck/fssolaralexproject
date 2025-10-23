@@ -1,3 +1,4 @@
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { blogPosts } from '@/lib/blog-data';
@@ -28,7 +29,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <article className="container mx-auto max-w-4xl px-4 py-16 md:py-24">
         <div className="mx-auto">
           <ScrollReveal>
-            <header className="mb-12 text-center">
+            <header className="mb-8 md:mb-12 text-center">
               <h1 className="mb-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                 {post.title}
               </h1>
@@ -47,7 +48,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
           {post.imageUrl && (
             <ScrollReveal delay={200}>
-              <div className="relative mb-12 aspect-video w-full overflow-hidden rounded-xl">
+              <div className="relative mb-8 md:mb-12 aspect-video w-full overflow-hidden rounded-xl">
                 <Image
                   src={post.imageUrl}
                   alt={`Featured image for ${post.title}`}
@@ -74,3 +75,5 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     </div>
   );
 }
+
+    
