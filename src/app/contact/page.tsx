@@ -13,7 +13,7 @@ export default function ContactPage() {
 
   return (
     <div className="bg-background">
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
@@ -88,7 +88,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Solar Marg, Koramangala, Bengaluru, Karnataka 560095
+                        38 B, Naharahpur, Near Dav Public School Gate No 4, Rohini Sector 7-110085
                       </p>
                     </div>
                   </div>
@@ -98,8 +98,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Phone</h3>
-                      <a href="tel:+918040001000" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
-                        +91 80 4000 1000
+                      <a href="tel:+919310443838" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
+                        +91 93104 43838
                       </a>
                     </div>
                   </div>
@@ -135,5 +135,3 @@ export default function ContactPage() {
     </div>
   );
 }
-
-    
