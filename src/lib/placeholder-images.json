@@ -3,157 +3,157 @@
     {
       "id": "hero-home",
       "description": "A beautiful modern house with solar panels on the roof under a clear blue sky.",
-      "imageUrl": "https://picsum.photos/seed/hero-home/1280/720",
+      "imageUrl": "https://images.unsplash.com/photo-1605980413988-9ff24c537935?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2xhciUyMHBhbmVscyUyMGhvdXNlfGVufDB8fHx8MTc2MTgwMTI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "solar panels house"
     },
     {
       "id": "about-us-main",
       "description": "A diverse team of engineers and technicians collaborating in a modern office.",
-      "imageUrl": "https://picsum.photos/seed/about-main/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1758691737487-29b4fae83e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaXZlcnNlJTIwdGVhbSUyMG9mZmljZXxlbnwwfHx8fDE3NjE4NjIyNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "diverse team office"
     },
     {
       "id": "about-us-mission",
       "description": "Close-up of a solar panel reflecting the sun.",
-      "imageUrl": "https://picsum.photos/seed/about-mission/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1724041875463-ba0a3f2fc68c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2xhciUyMHBhbmVsJTIwc3VufGVufDB8fHx8MTc2MTg2MjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "solar panel sun"
     },
     {
       "id": "team-member-1",
-      "description": "Professional headshot of Jane Doe, CEO.",
-      "imageUrl": "https://picsum.photos/seed/team-1/400/400",
+      "description": "Professional headshot of Priya Sharma, Founder & CEO.",
+      "imageUrl": "https://i.ibb.co/fdJZW9M8/Whats-App-Image-2025-10-27-at-2-24-06-PM.jpg",
       "imageHint": "professional woman"
     },
     {
       "id": "team-member-2",
-      "description": "Professional headshot of John Smith, Lead Engineer.",
-      "imageUrl": "https://picsum.photos/seed/team-2/400/400",
+      "description": "Professional headshot of Rohan Mehta, Lead Engineer.",
+      "imageUrl": "https://i.ibb.co/0jZ2n8jj/Whats-App-Image-2025-10-27-at-2-24-07-PM.jpg",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-3",
-      "description": "Professional headshot of Emily White, Project Manager.",
-      "imageUrl": "https://picsum.photos/seed/team-3/400/400",
+      "description": "Professional headshot of Ananya Gupta, Head of Operations.",
+      "imageUrl": "https://i.ibb.co/prjgLQFg/Whats-App-Image-2025-10-27-at-2-24-08-PM-1.jpg",
       "imageHint": "professional woman smile"
     },
     {
       "id": "team-member-4",
-      "description": "Professional headshot of Michael Brown, Sales Director.",
-      "imageUrl": "https://picsum.photos/seed/team-4/400/400",
+      "description": "Professional headshot of Vikram Singh, Director of Sales.",
+      "imageUrl": "https://i.ibb.co/TD0fy0Dk/Whats-App-Image-2025-10-27-at-2-24-08-PM.jpg",
       "imageHint": "professional man glasses"
     },
     {
       "id": "portfolio-project-1",
       "description": "Suburban Family Home Installation",
-      "imageUrl": "https://picsum.photos/seed/project-1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1610569244414-5e7453a447a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdWJ1cmJhbiUyMGhvdXNlJTIwc29sYXJ8ZW58MHx8fHwxNzYxODYyMjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "suburban house solar"
     },
     {
       "id": "portfolio-project-2",
       "description": "Commercial Rooftop Project",
-      "imageUrl": "https://picsum.photos/seed/project-2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1617679212891-ff4416402210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBzb2xhcnxlbnwwfHx8fDE3NjE4NjIyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "commercial building solar"
     },
     {
       "id": "portfolio-project-3",
       "description": "Rural Farm Solar Array",
-      "imageUrl": "https://picsum.photos/seed/project-3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1722279457783-65691f94d37e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFybSUyMHNvbGFyJTIwcGFuZWxzfGVufDB8fHx8MTc2MTg2MjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "farm solar panels"
     },
     {
       "id": "portfolio-project-4",
       "description": "Modern Urban Residence",
-      "imageUrl": "https://picsum.photos/seed/project-4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1716172874874-ed7504011de8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBob3VzZSUyMHNvbGFyfGVufDB8fHx8MTc2MTg2MjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern house solar"
     },
     {
       "id": "portfolio-project-5",
       "description": "Community Center Power",
-      "imageUrl": "https://picsum.photos/seed/project-5/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1731468954685-94a1140eb451?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjBidWlsZGluZ3xlbnwwfHx8fDE3NjE4MDIxNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "community building"
     },
     {
       "id": "portfolio-project-6",
       "description": "Industrial Warehouse Solution",
-      "imageUrl": "https://picsum.photos/seed/project-6/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1596518523651-78b26aef307a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjByb29mJTIwc29sYXJ8ZW58MHx8fHwxNzYxODYyMjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "warehouse roof solar"
     },
     {
       "id": "portfolio-project-7",
       "description": "Lakefront Vacation Home",
-      "imageUrl": "https://picsum.photos/seed/project-7/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1732654154851-278ab9a66ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGFrZSUyMGhvdXNlJTIwc29sYXJ8ZW58MHx8fHwxNzYxODYyMjcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "lake house solar"
     },
     {
       "id": "portfolio-project-8",
       "description": "Boutique Hotel Solar",
-      "imageUrl": "https://picsum.photos/seed/project-8/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1708720500540-611d360140e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxob3RlbCUyMHNvbGFyJTIwcGFuZWxzfGVufDB8fHx8MTc2MTg2MjI3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hotel solar panels"
     },
     {
       "id": "blog-post-thumbnail-1",
       "description": "Abstract image of sun rays and solar panels.",
-      "imageUrl": "https://picsum.photos/seed/blog-1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1604062604180-60878425cd1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c29sYXIlMjBlbmVyZ3klMjBhYnN0cmFjdHxlbnwwfHx8fDE3NjE4NjIyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "solar energy abstract"
     },
     {
       "id": "blog-post-thumbnail-2",
       "description": "A hand holding a small plant with a sun flare in the background.",
-      "imageUrl": "https://picsum.photos/seed/blog-2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1559799026-459568336346?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJpbGl0eSUyMGVuZXJneXxlbnwwfHx8fDE3NjE4NjIyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sustainability energy"
     },
     {
       "id": "blog-post-thumbnail-3",
       "description": "A diagram showing how solar panel financing works.",
-      "imageUrl": "https://picsum.photos/seed/blog-3/600/400",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1579225818168-858da8667fae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjBjaGFydHxlbnwwfHx8fDE3NjE3NzQ2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial chart"
     },
     {
       "id": "blog-post-thumbnail-4",
       "description": "A technician cleaning solar panels on a roof.",
-      "imageUrl": "https://picsum.photos/seed/blog-4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2xhciUyMHBhbmVsJTIwbWFpbnRlbmFuY2V8ZW58MHx8fHwxNzYxODYyMjcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "solar panel maintenance"
     },
     {
       "id": "service-consultation",
       "description": "An engineer reviewing blueprints for a solar installation.",
-      "imageUrl": "https://picsum.photos/seed/service-1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1756040732460-0b399e2cab33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2xhciUyMGJsdWVwcmludHN8ZW58MHx8fHwxNzYxODYyMjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "solar blueprints"
     },
     {
       "id": "service-installation",
       "description": "Technicians installing solar panels on a residential roof.",
-      "imageUrl": "https://picsum.photos/seed/service-2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1660330589243-4c640d878052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2xhciUyMGluc3RhbGxhdGlvbnxlbnwwfHx8fDE3NjE4NjIyNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "solar installation"
     },
     {
       "id": "service-maintenance",
       "description": "A drone inspecting a large array of solar panels.",
-      "imageUrl": "https://picsum.photos/seed/service-3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1697537335900-88bd20e24822?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkcm9uZSUyMGluc3BlY3Rpb258ZW58MHx8fHwxNzYxODYyMjcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "drone inspection"
     },
     {
       "id": "service-financing",
       "description": "A person signing a document with a calculator and piggy bank nearby.",
-      "imageUrl": "https://picsum.photos/seed/service-4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1622117523535-ecb446c0c1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaW5hbmNpbmclMjBzaWduaW5nfGVufDB8fHx8MTc2MTg2MjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financing signing"
     },
     {
       "id": "service-battery",
       "description": "A sleek home battery storage unit mounted on a garage wall.",
-      "imageUrl": "https://picsum.photos/seed/service-5/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1590126141992-d6a613152c77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxob21lJTIwYmF0dGVyeXxlbnwwfHx8fDE3NjE4MTAxOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "home battery"
     },
     {
       "id": "service-audit",
       "description": "A person using a tablet to analyze a home's energy consumption.",
-      "imageUrl": "https://picsum.photos/seed/service-6/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1702479744048-0351261e1ac1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbmVyZ3klMjBhdWRpdCUyMHRhYmxldHxlbnwwfHx8fDE3NjE4NjIyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "energy audit tablet"
     },
     {
       "id": "contact-map",
       "description": "A map showing the location of Solaris Hub headquarters.",
-      "imageUrl": "https://picsum.photos/seed/map-location/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1717700299581-c2fc3fad4ee8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2MTgwMTY0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city map"
     }
   ]
