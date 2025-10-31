@@ -75,7 +75,7 @@ export default function ContactPage() {
             <ScrollReveal delay={200}>
               <div className="space-y-8">
                   <div>
-                      <h2 className="text-2xl font-bold">Our Office</h2>
+                      <h2 className="text-2xl font-bold">Our Offices</h2>
                       <p className="mt-2 text-muted-foreground">
                       Visit us or get in touch directly through phone or email.
                       </p>
@@ -86,9 +86,20 @@ export default function ContactPage() {
                       <MapPin className="size-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold">Address</h3>
+                      <h3 className="font-semibold">Main Office (Rohini)</h3>
                       <p className="text-muted-foreground">
                         38 B, Naharahpur, Near Dav Public School Gate No 4, Rohini Sector 7-110085
+                      </p>
+                    </div>
+                  </div>
+                   <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 pt-1">
+                      <MapPin className="size-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Regional Office (Bahadurgarh)</h3>
+                      <p className="text-muted-foreground">
+                        Arya nagar main road near gali no.5 Bahadurgarh, Haryana.
                       </p>
                     </div>
                   </div>
