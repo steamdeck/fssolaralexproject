@@ -1,5 +1,5 @@
 
-import { ArrowRight, Leaf, Zap, Sun, Star } from 'lucide-react';
+import { ArrowRight, Leaf, Zap, Sun, Star, Megaphone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -81,7 +81,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative w-full py-16 md:py-24 lg:py-32">
+      <section className="relative w-full py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <ScrollReveal>
@@ -125,7 +125,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="benefits" className="w-full bg-card py-16 md:py-24">
+      <section className="w-full bg-accent/20 py-8 md:py-12">
+        <div className="container mx-auto px-4 md:px-6">
+          <ScrollReveal>
+            <div className="flex flex-col items-center text-center md:flex-row md:gap-8">
+              <Megaphone className="size-12 text-primary md:size-16" />
+              <div className="mt-4 md:mt-0 md:text-left">
+                <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
+                  Get upto ₹78,000 subsidy through PM Surya Ghar Muft Bijli
+                  Yojana
+                </h2>
+                <p className="mt-2 text-muted-foreground">
+                  Take advantage of government schemes to make your switch to
+                  solar even more affordable.
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+
+      <section id="benefits" className="w-full bg-card py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
@@ -159,7 +180,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-primary text-primary-foreground py-16 md:py-24">
+      <section className="w-full bg-primary text-primary-foreground py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <ScrollReveal>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -177,7 +198,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section id="portfolio" className="w-full py-16 md:py-24">
+      <section id="portfolio" className="w-full py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
@@ -225,7 +246,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="testimonials" className="w-full bg-card py-16 md:py-24">
+      <section id="testimonials" className="w-full bg-card py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
@@ -260,7 +281,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="blog" className="w-full bg-background py-16 md:py-24">
+      <section id="blog" className="w-full bg-background py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
