@@ -31,12 +31,21 @@ export default function RootLayout({
         )}
       >
         <Preloader />
-        <ScrollGradientBackground>
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-        </ScrollGradientBackground>
+        <div className="relative flex min-h-dvh flex-col bg-background">
+          <ScrollGradientBackground>
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </ScrollGradientBackground>
+        </div>
         <Toaster />
+        <div className="fixed bottom-0 left-0 right-0 z-50 w-full bg-secondary text-secondary-foreground py-2 overflow-hidden">
+            <div className="whitespace-nowrap">
+            <span className="marquee inline-block text-sm font-semibold">
+                Government-authorized vendor for roof top solar, under PM Surya Ghar: Muft Bijli Yojana
+            </span>
+            </div>
+        </div>
       </body>
     </html>
   );

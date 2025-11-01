@@ -80,13 +80,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-       <div className="w-full bg-secondary text-secondary-foreground py-2 overflow-hidden">
-        <div className="whitespace-nowrap">
-          <span className="marquee inline-block text-sm font-semibold">
-            Government-authorized vendor for roof top solar, under PM Surya Ghar: Muft Bijli Yojana
-          </span>
-        </div>
-      </div>
       <section className="w-full bg-accent/20 py-4 md:py-6">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
