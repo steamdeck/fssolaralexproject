@@ -7,4 +7,5 @@ export const navLinks = [
   { href: '/blog', label: 'Blog' },
   { href: '/calculator', label: 'Savings Calculator' },
   { href: '/contact', label: 'Contact Us' },
+  { href: '/demo', label: 'Live Demo' },
 ];
