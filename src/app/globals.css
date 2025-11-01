@@ -79,9 +79,15 @@
   }
 }
 
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
 @layer utilities {
   .animated-gradient {
-    background: linear-gradient(-45deg, #f9ad5f, #ffeb80, #a0e1f7);
+    background: linear-gradient(-45deg, #fce5b3, #fff3d1, #bde7f7);
     background-size: 400% 400%;
     animation: gradient-animation 15s ease infinite;
   }
@@ -94,5 +100,9 @@
   .scroll-reveal.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+  
+  .marquee {
+    animation: marquee 20s linear infinite;
   }
 }

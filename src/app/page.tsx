@@ -1,4 +1,3 @@
-
 import { ArrowRight, Leaf, Zap, Sun, Star, Megaphone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -81,17 +80,24 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="w-full bg-accent/20 py-8 md:py-12">
+       <div className="w-full bg-secondary text-secondary-foreground py-2 overflow-hidden">
+        <div className="whitespace-nowrap">
+          <span className="marquee inline-block text-sm font-semibold">
+            Government-authorized vendor for roof top solar, under PM Surya Ghar: Muft Bijli Yojana
+          </span>
+        </div>
+      </div>
+      <section className="w-full bg-accent/20 py-4 md:py-6">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="flex flex-col items-center text-center md:flex-row md:gap-8">
-              <Megaphone className="size-12 text-primary md:size-16" />
+              <Megaphone className="size-10 text-primary md:size-12" />
               <div className="mt-4 md:mt-0 md:text-left">
-                <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
+                <h2 className="text-xl font-bold text-foreground sm:text-2xl">
                   Get upto ₹78,000 subsidy through PM Surya Ghar Muft Bijli
                   Yojana
                 </h2>
-                <p className="mt-2 text-muted-foreground">
+                <p className="mt-1 text-muted-foreground text-sm md:text-base">
                   Take advantage of government schemes to make your switch to
                   solar even more affordable.
                 </p>
@@ -101,12 +107,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative w-full py-12 md:py-16">
+      <section className="relative w-full py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center">
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <ScrollReveal>
-              <div className="space-y-6">
-                <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+              <div className="space-y-4">
+                <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
                   Power Your Future with GH Solar
                 </h1>
                 <p className="text-lg text-muted-foreground">
@@ -145,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="benefits" className="w-full bg-card py-12 md:py-16">
+      <section id="benefits" className="w-full bg-card py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
@@ -179,7 +185,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-primary text-primary-foreground py-12 md:py-16">
+      <section className="w-full bg-primary text-primary-foreground py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <ScrollReveal>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -197,7 +203,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section id="portfolio" className="w-full py-12 md:py-16">
+      <section id="portfolio" className="w-full py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
@@ -245,7 +251,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="testimonials" className="w-full bg-card py-12 md:py-16">
+      <section id="testimonials" className="w-full bg-card py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
@@ -280,7 +286,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="blog" className="w-full bg-background py-12 md:py-16">
+      <section id="blog" className="w-full bg-background py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">
@@ -344,5 +350,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
