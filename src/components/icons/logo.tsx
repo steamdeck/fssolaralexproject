@@ -14,7 +14,7 @@ export function Logo({
     <div {...props} style={{ width, height }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="https://i.ibb.co/1GzfGM4W/Whats-App-Image-2025-10-11-at-10-33-52-AM.jpg"
+        src="https://i.ibb.co/HLVrJn0G/solar-bgr.png"
         alt="GH Solar Logo"
         width={width}
         height={height}
