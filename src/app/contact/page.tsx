@@ -120,8 +120,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <a href="mailto:contact@ghsolar.in" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
-                        contact@ghsolar.in
+                      <a href="mailto:ghsolar@ghecopolis.com" className="text-muted-foreground transition-colors duration-300 hover:text-primary">
+                        ghsolar@ghecopolis.com
                       </a>
                     </div>
                   </div>
