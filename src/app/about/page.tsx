@@ -16,8 +16,8 @@ const teamMembers = [
   },
   {
     name: 'Hemant Rao',
-    title: 'Co-Founder & Lead Engineer',
-    bio: 'Hemant is the mastermind behind our innovative solar solutions, ensuring every system is efficient and reliable.',
+    title: 'Co-Founder',
+    bio: 'As a co-founder, Hemant\'s vision and leadership are instrumental in guiding GH Solar\'s strategic direction and growth.',
     imageId: 'team-member-2',
   },
   {
@@ -27,10 +27,10 @@ const teamMembers = [
     imageId: 'team-member-3',
   },
   {
-    name: 'Vikram Singh',
-    title: 'Director of Sales',
-    bio: 'Vikram and his team are dedicated to helping clients find the perfect solar solution for their needs and budget.',
-    imageId: 'team-member-4',
+    name: 'Abhishek Patel',
+    title: 'Lead Manager',
+    bio: 'Abhishek expertly manages our key projects, ensuring they are delivered on time and to the highest standards of quality.',
+    imageId: 'team-member-5',
   },
 ];
 
