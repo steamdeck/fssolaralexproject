@@ -88,7 +88,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold">Main Office (Rohini)</h3>
                       <p className="text-muted-foreground">
-                        38 B, Naharahpur, Near Dav Public School Gate No 4, Rohini Sector 7-110085
+                        1st Floor, 38 B, Naharahpur, Near Dav Public School Gate No 4, Rohini Sector 7-110085
                       </p>
                     </div>
                   </div>
