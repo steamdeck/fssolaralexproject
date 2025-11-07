@@ -1,3 +1,4 @@
+
 import { ArrowRight, Leaf, Zap, Sun, Star, Megaphone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -87,7 +88,7 @@ export default function Home() {
               <Megaphone className="size-10 text-primary md:size-12" />
               <div className="mt-4 md:mt-0 md:text-left">
                 <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                  Get upto ₹78,000 subsidy through PM Surya Ghar Muft Bijli
+                  Get upto ₹1,08,000 subsidy through PM Surya Ghar Muft Bijli
                   Yojana
                 </h2>
                 <p className="mt-1 text-muted-foreground text-sm md:text-base">
