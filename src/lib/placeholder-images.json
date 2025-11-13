@@ -20,15 +20,15 @@
     },
     {
       "id": "team-member-1",
-      "description": "Professional headshot of Priya Sharma, Founder & CEO.",
-      "imageUrl": "https://i.ibb.co/fdJZW9M8/Whats-App-Image-2025-10-27-at-2-24-06-PM.jpg",
-      "imageHint": "professional woman"
+      "description": "Professional headshot of Naresh Rao, Co-Founder & CEO.",
+      "imageUrl": "https://i.ibb.co/C3Vhp3z3/naresh-rao.jpg",
+      "imageHint": "professional man"
     },
     {
       "id": "team-member-2",
-      "description": "Professional headshot of Rohan Mehta, Lead Engineer.",
-      "imageUrl": "https://i.ibb.co/0jZ2n8jj/Whats-App-Image-2025-10-27-at-2-24-07-PM.jpg",
-      "imageHint": "professional man"
+      "description": "Professional headshot of Hemant Rao, Co-Founder.",
+      "imageUrl": "https://i.ibb.co/1J03jGjk/hemant-eao.jpg",
+      "imageHint": "professional man smile"
     },
     {
       "id": "team-member-3",
@@ -45,7 +45,7 @@
     {
       "id": "team-member-5",
       "description": "Professional headshot of Abhishek Patel, Lead Manager.",
-      "imageUrl": "https://images.unsplash.com/photo-1680104073282-8462cdf70b6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjI1MzMyMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/Z601dHL5/abhixsjhek-patel-lead-manager.jpg",
       "imageHint": "professional man headshot"
     },
     {
