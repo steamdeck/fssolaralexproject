@@ -11,90 +11,90 @@ import { ScrollReveal } from '@/components/ui/scroll-reveal';
 const projects = [
   {
     id: 'portfolio-project-1',
-    category: 'residential',
+    category: 'rohini-sector-8',
     title: 'Suburban Family Home',
-    location: 'Indiranagar, Bengaluru',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"GH Solar made the entire process so easy. Our energy bills have been cut in half, and we feel great about reducing our carbon footprint!"',
     rating: 5,
   },
   {
     id: 'portfolio-project-2',
-    category: 'commercial',
-    title: 'Office Building in BKC',
-    location: 'Bandra Kurla Complex, Mumbai',
+    category: 'rohini-sector-8',
+    title: 'Office Building',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"The rooftop installation was professional and fast. The energy savings for our business have been substantial. Highly recommend their commercial services."',
     rating: 5,
   },
   {
     id: 'portfolio-project-3',
-    category: 'agricultural',
+    category: 'rohini-sector-8',
     title: 'Rural Farm & Barn',
-    location: 'Hoshiarpur, Punjab',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"Powering our farm with solar has been a game-changer. The team understood our unique energy needs and delivered a robust system that powers all our operations."',
     rating: 5,
   },
   {
     id: 'portfolio-project-4',
-    category: 'residential',
+    category: 'rohini-sector-8',
     title: 'Modern Urban Residence',
-    location: 'Jubilee Hills, Hyderabad',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"The sleek, low-profile panels look amazing on our modern home. We are now energy independent and couldn\'t be happier with the result."',
     rating: 4.5,
   },
   {
     id: 'portfolio-project-5',
-    category: 'commercial',
+    category: 'rohini-sector-8',
     title: 'Community Center',
-    location: 'Anna Nagar, Chennai',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"GH Solar helped our non-profit community center go green. Their guidance on grants and financing was invaluable. A true community partner."',
     rating: 5,
   },
   {
     id: 'portfolio-project-6',
-    category: 'industrial',
+    category: 'rohini-sector-8',
     title: 'Industrial Warehouse',
-    location: 'Pimpri-Chinchwad, Pune',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"The scale of our warehouse roof was a challenge, but GH Solar designed a massive system that has drastically reduced our operating costs. Exceptional work!"',
     rating: 5,
   },
    {
     id: 'portfolio-project-7',
-    category: 'residential',
+    category: 'rohini-sector-8',
     title: 'Lakefront Vacation Home',
-    location: 'Udaipur, Rajasthan',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"We wanted to make our vacation home eco-friendly. GH Solar installed a fantastic system with battery backup. Now we can enjoy the lake knowing we\'re powered by the sun."',
     rating: 5,
   },
   {
     id: 'portfolio-project-8',
-    category: 'commercial',
+    category: 'rohini-sector-8',
     title: 'Boutique Hotel',
-    location: 'Candolim, Goa',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"Our guests love that we\'re a green hotel. The solar installation was smooth and the aesthetic integration with our building is perfect. A great investment."',
     rating: 5,
   },
   {
     id: 'portfolio-project-9',
-    category: 'industrial',
+    category: 'rohini-sector-8',
     title: 'Factory Rooftop',
-    location: 'Gurgaon, Haryana',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"Exceptional service and a top-quality installation. Our factory is now running on clean energy, and we are seeing the benefits on our bottom line."',
     rating: 5,
   },
   {
     id: 'portfolio-project-10',
-    category: 'residential',
+    category: 'rohini-sector-8',
     title: 'Apartment Complex',
-    location: 'Noida, Uttar Pradesh',
+    location: 'Rohini Sector 8, New Delhi',
     testimonial:
       '"GH Solar provided a solution for our entire apartment complex. The residents are happy with the lower bills, and we\'re proud to be a green community."',
     rating: 5,
@@ -120,6 +120,16 @@ const renderStars = (rating: number) => {
 
 const ProjectGrid = ({ filter }: { filter: string }) => {
   const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+  
+  if (filteredProjects.length === 0) {
+    return (
+        <div className="text-center text-muted-foreground py-16">
+            <p className="text-lg">No projects to display in this category yet.</p>
+            <p>Check back soon for updates!</p>
+        </div>
+    )
+  }
+
 
   return (
      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -166,7 +176,11 @@ const ProjectGrid = ({ filter }: { filter: string }) => {
 };
 
 export default function PortfolioPage() {
-  const categories = ['all', 'residential', 'commercial', 'industrial', 'agricultural'];
+  const categories = [
+    { value: 'all', label: 'All' },
+    { value: 'rohini-sector-8', label: 'Rohini Sector 8' },
+    { value: 'karol-bagh', label: 'Karol Bagh' },
+  ];
   
   return (
     <div className="bg-background">
@@ -184,18 +198,18 @@ export default function PortfolioPage() {
 
           <ScrollReveal delay={200}>
             <Tabs defaultValue="all" className="mt-12 md:mt-16 w-full">
-              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-auto max-w-2xl h-auto flex-wrap">
+              <TabsList className="grid w-full grid-cols-3 mx-auto max-w-lg h-auto flex-wrap">
                 {categories.map(category => (
-                  <TabsTrigger key={category} value={category} className="capitalize py-2">
-                    {category}
+                  <TabsTrigger key={category.value} value={category.value} className="capitalize py-2">
+                    {category.label}
                   </TabsTrigger>
                 ))}
               </TabsList>
               
               <div className="mt-8">
                 {categories.map(category => (
-                  <TabsContent key={category} value={category}>
-                    <ProjectGrid filter={category} />
+                  <TabsContent key={category.value} value={category.value}>
+                    <ProjectGrid filter={category.value} />
                   </TabsContent>
                 ))}
               </div>
