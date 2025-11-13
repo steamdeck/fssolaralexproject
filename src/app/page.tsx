@@ -1,5 +1,5 @@
 
-import { ArrowRight, Leaf, Zap, Sun, Star, Megaphone } from 'lucide-react';
+import { ArrowRight, Leaf, Zap, Sun, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -81,26 +81,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="w-full bg-accent/20 py-4 md:py-6">
-        <div className="container mx-auto px-4 md:px-6">
-          <ScrollReveal>
-            <div className="flex flex-col items-center text-center md:flex-row md:gap-8">
-              <Megaphone className="size-10 text-primary md:size-12" />
-              <div className="mt-4 md:mt-0 md:text-left">
-                <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                  Get upto ₹1,08,000 subsidy through PM Surya Ghar Muft Bijli
-                  Yojana
-                </h2>
-                <p className="mt-1 text-muted-foreground text-sm md:text-base">
-                  Take advantage of government schemes to make your switch to
-                  solar even more affordable.
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
       <section className="relative w-full py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">

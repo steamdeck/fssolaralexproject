@@ -8,6 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { Preloader } from '@/components/layout/preloader';
 import { ScrollGradientBackground } from '@/components/layout/scroll-gradient-background';
+import { Megaphone } from 'lucide-react';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -34,18 +35,18 @@ export default function RootLayout({
         <div className="relative flex min-h-dvh flex-col bg-background">
           <ScrollGradientBackground>
             <SiteHeader />
+             <div className="sticky top-20 z-40 w-full bg-secondary text-secondary-foreground py-2 overflow-hidden border-b border-border/40">
+                <div className="whitespace-nowrap">
+                <span className="marquee inline-block text-sm font-semibold">
+                    Government-authorized vendor for roof top solar, under PM Surya Ghar: Muft Bijli Yojana • LOAN FACILITY AVAILABLE
+                </span>
+                </div>
+            </div>
             <main className="flex-1">{children}</main>
             <SiteFooter />
           </ScrollGradientBackground>
         </div>
         <Toaster />
-        <div className="fixed bottom-0 left-0 right-0 z-50 w-full bg-secondary text-secondary-foreground py-2 overflow-hidden">
-            <div className="whitespace-nowrap">
-            <span className="marquee inline-block text-sm font-semibold">
-                Government-authorized vendor for roof top solar, under PM Surya Ghar: Muft Bijli Yojana • LOAN FACILITY AVAILABLE
-            </span>
-            </div>
-        </div>
       </body>
     </html>
   );
