@@ -81,6 +81,24 @@ const projects = [
       '"Our guests love that we\'re a green hotel. The solar installation was smooth and the aesthetic integration with our building is perfect. A great investment."',
     rating: 5,
   },
+  {
+    id: 'portfolio-project-9',
+    category: 'industrial',
+    title: 'Factory Rooftop',
+    location: 'Gurgaon, Haryana',
+    testimonial:
+      '"Exceptional service and a top-quality installation. Our factory is now running on clean energy, and we are seeing the benefits on our bottom line."',
+    rating: 5,
+  },
+  {
+    id: 'portfolio-project-10',
+    category: 'residential',
+    title: 'Apartment Complex',
+    location: 'Noida, Uttar Pradesh',
+    testimonial:
+      '"GH Solar provided a solution for our entire apartment complex. The residents are happy with the lower bills, and we\'re proud to be a green community."',
+    rating: 5,
+  },
 ];
 
 const renderStars = (rating: number) => {
@@ -202,5 +220,3 @@ export default function PortfolioPage() {
     </div>
   );
 }
-
-    

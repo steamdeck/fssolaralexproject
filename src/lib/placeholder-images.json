@@ -85,6 +85,18 @@
       "imageHint": "hotel solar panels"
     },
     {
+      "id": "portfolio-project-9",
+      "description": "Factory Rooftop Installation",
+      "imageUrl": "https://i.ibb.co/cKn0QKZb/Whats-App-Image-2025-11-13-at-11-54-05-AM.jpg",
+      "imageHint": "factory roof solar"
+    },
+    {
+      "id": "portfolio-project-10",
+      "description": "Apartment Complex Solar Grid",
+      "imageUrl": "https://i.ibb.co/RTzqHsrX/Whats-App-Image-2025-11-13-at-11-54-06-AM.jpg",
+      "imageHint": "apartment solar"
+    },
+    {
       "id": "blog-post-thumbnail-1",
       "description": "Abstract image of sun rays and solar panels.",
       "imageUrl": "https://images.unsplash.com/photo-1604062604180-60878425cd1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c29sYXIlMjBlbmVyZ3klMjBhYnN0cmFjdHxlbnwwfHx8fDE3NjE4NjIyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -111,7 +123,7 @@
     {
       "id": "service-consultation",
       "description": "An engineer reviewing blueprints for a solar installation.",
-      "imageUrl": "https://images.unsplash.com/photo-1756040732460-0b399e2cab33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2xhciUyMGJsdWVwcmludHN8ZW58MHx8fHwxNzYxODYyMjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1756040732460-0b399e2cab33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2xhciUyMGJsdWVwcmludHN8ZW58MHx8fHwxNzYxODYyMjcymDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "solar blueprints"
     },
     {
