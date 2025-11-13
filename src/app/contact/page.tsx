@@ -1,12 +1,9 @@
 
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
+import { ContactForm } from './contact-form';
 
 export default function ContactPage() {
   const mapImage = PlaceHolderImages.find((img) => img.id === 'contact-map');
@@ -27,50 +24,16 @@ export default function ContactPage() {
 
           <div className="mt-12 md:mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             <ScrollReveal>
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-2xl font-bold">Get a Free Quote</h2>
-                  <p className="mt-2 text-muted-foreground">
-                    Fill out the form, and one of our solar experts will get back to
-                    you shortly to discuss your project.
-                  </p>
+                <div className="space-y-8">
+                    <div>
+                    <h2 className="text-2xl font-bold">Get a Free Quote</h2>
+                    <p className="mt-2 text-muted-foreground">
+                        Fill out the form, and one of our solar experts will get back to
+                        you shortly to discuss your project.
+                    </p>
+                    </div>
+                   <ContactForm />
                 </div>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="first-name">First Name</Label>
-                      <Input id="first-name" placeholder="Rohan" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="last-name">Last Name</Label>
-                      <Input id="last-name" placeholder="Mehta" />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="rohan.mehta@example.com"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" type="tel" placeholder="+91 98765 43210" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell us about your project or ask any questions..."
-                      rows={5}
-                    />
-                  </div>
-                  <Button type="submit" size="lg" className="w-full sm:w-auto">
-                    Send Message
-                  </Button>
-                </form>
-              </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
               <div className="space-y-8">
