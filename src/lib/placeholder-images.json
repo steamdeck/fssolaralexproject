@@ -39,49 +39,49 @@
     {
       "id": "portfolio-project-1",
       "description": "Suburban Family Home Installation",
-      "imageUrl": "https://images.unsplash.com/photo-1610569244414-5e7453a447a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdWJ1cmJhbiUyMGhvdXNlJTIwc29sYXJ8ZW58MHx8fHwxNzYxODYyMjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/gZStdfV5/Whats-App-Image-2025-11-11-at-9-24-58-PM.jpg",
       "imageHint": "suburban house solar"
     },
     {
       "id": "portfolio-project-2",
       "description": "Commercial Rooftop Project",
-      "imageUrl": "https://images.unsplash.com/photo-1617679212891-ff4416402210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBzb2xhcnxlbnwwfHx8fDE3NjE4NjIyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/nqjktqTJ/Whats-App-Image-2025-11-11-at-9-25-00-PM.jpg",
       "imageHint": "commercial building solar"
     },
     {
       "id": "portfolio-project-3",
       "description": "Rural Farm Solar Array",
-      "imageUrl": "https://images.unsplash.com/photo-1722279457783-65691f94d37e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFybSUyMHNvbGFyJTIwcGFuZWxzfGVufDB8fHx8MTc2MTg2MjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/wNV8G3jv/Whats-App-Image-2025-11-11-at-9-26-49-PM-1.jpg",
       "imageHint": "farm solar panels"
     },
     {
       "id": "portfolio-project-4",
       "description": "Modern Urban Residence",
-      "imageUrl": "https://images.unsplash.com/photo-1716172874874-ed7504011de8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBob3VzZSUyMHNvbGFyfGVufDB8fHx8MTc2MTg2MjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/27qnpHVQ/Whats-App-Image-2025-11-11-at-9-26-49-PM-3.jpg",
       "imageHint": "modern house solar"
     },
     {
       "id": "portfolio-project-5",
       "description": "Community Center Power",
-      "imageUrl": "https://images.unsplash.com/photo-1731468954685-94a1140eb451?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjBidWlsZGluZ3xlbnwwfHx8fDE3NjE4MDIxNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/DPnxgD19/Whats-App-Image-2025-11-11-at-9-26-49-PM.jpg",
       "imageHint": "community building"
     },
     {
       "id": "portfolio-project-6",
       "description": "Industrial Warehouse Solution",
-      "imageUrl": "https://images.unsplash.com/photo-1596518523651-78b26aef307a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjByb29mJTIwc29sYXJ8ZW58MHx8fHwxNzYxODYyMjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/23kgnqg8/Whats-App-Image-2025-11-13-at-11-54-04-AM-1.jpg",
       "imageHint": "warehouse roof solar"
     },
     {
       "id": "portfolio-project-7",
       "description": "Lakefront Vacation Home",
-      "imageUrl": "https://images.unsplash.com/photo-1732654154851-278ab9a66ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGFrZSUyMGhvdXNlJTIwc29sYXJ8ZW58MHx8fHwxNzYxODYyMjcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/4wwQCZQx/Whats-App-Image-2025-11-13-at-11-54-04-AM.jpg",
       "imageHint": "lake house solar"
     },
     {
       "id": "portfolio-project-8",
       "description": "Boutique Hotel Solar",
-      "imageUrl": "https://images.unsplash.com/photo-1708720500540-611d360140e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxob3RlbCUyMHNvbGFyJTIwcGFuZWxzfGVufDB8fHx8MTc2MTg2MjI3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/GfhB24Cq/Whats-App-Image-2025-11-13-at-11-54-05-AM-1.jpg",
       "imageHint": "hotel solar panels"
     },
     {
