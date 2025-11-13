@@ -26,12 +26,6 @@ const teamMembers = [
     bio: 'Ananya ensures that every project, from consultation to installation, runs smoothly and exceeds client expectations.',
     imageId: 'team-member-3',
   },
-  {
-    name: 'Abhishek Patel',
-    title: 'Lead Manager',
-    bio: 'Abhishek expertly manages our key projects, ensuring they are delivered on time and to the highest standards of quality.',
-    imageId: 'team-member-5',
-  },
 ];
 
 const companyValues = [
@@ -180,7 +174,7 @@ export default function AboutPage() {
               The dedicated professionals powering our mission. We are a group of engineers, designers, and visionaries united by a passion for a sustainable future.
             </p>
           </ScrollReveal>
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map((member, i) => {
               const memberImage = PlaceHolderImages.find(
                 (img) => img.id === member.imageId
