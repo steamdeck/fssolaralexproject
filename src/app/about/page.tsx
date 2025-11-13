@@ -21,10 +21,10 @@ const teamMembers = [
     imageId: 'team-member-2',
   },
   {
-    name: 'Ananya Gupta',
-    title: 'Head of Operations',
-    bio: 'Ananya ensures that every project, from consultation to installation, runs smoothly and exceeds client expectations.',
-    imageId: 'team-member-3',
+    name: 'Abhishek Patel',
+    title: 'Lead Manager',
+    bio: 'Abhishek expertly manages our key projects, ensuring they are delivered on time and to the highest standards of quality.',
+    imageId: 'team-member-5',
   },
 ];
 
