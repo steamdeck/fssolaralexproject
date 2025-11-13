@@ -85,7 +85,7 @@ export default function AboutPage() {
                 our communities and our nation. 
               </p>
                <p className="mt-4 text-muted-foreground">
-                Starting with a dedicated team in Bengaluru, we have quickly grown into a trusted provider of solar solutions,
+                Starting with a dedicated team in New Delhi, we have quickly grown into a trusted provider of solar solutions,
                 helping homeowners and businesses across the country make the switch to
                 solar. Our journey is driven by innovation, dedication, and an unwavering commitment to our founding principles.
               </p>
