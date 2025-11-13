@@ -21,10 +21,10 @@ const projects = [
   {
     id: 'portfolio-project-2',
     category: 'rohini-sector-8',
-    title: 'Office Building',
+    title: 'Suburban Family Home',
     location: 'Rohini Sector 8, New Delhi',
     testimonial:
-      '"The rooftop installation was professional and fast. The energy savings for our business have been substantial. Highly recommend their commercial services."',
+      '"GH Solar made the entire process so easy. Our energy bills have been cut in half, and we feel great about reducing our carbon footprint!"',
     rating: 5,
   },
   {
