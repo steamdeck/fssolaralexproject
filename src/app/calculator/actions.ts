@@ -8,20 +8,18 @@ import {
 import { z } from 'zod';
 
 const SavingsCalculatorSchema = z.object({
-  energyConsumption: z.coerce
+  monthlyBill: z.coerce
     .number({ invalid_type_error: 'Please enter a valid number.' })
-    .min(1, 'Energy consumption must be greater than 0.'),
-  location: z.string().min(3, 'Location is required.'),
-  currentEnergyCost: z.coerce.number().optional(),
+    .min(1, 'Monthly bill must be greater than 0.'),
+  pincode: z.string().length(6, 'Please enter a valid 6-digit pincode.'),
 });
 
 export type FormState = {
   result?: SavingsCalculatorOutput;
   error?: string;
   fieldErrors?: {
-    energyConsumption?: string[];
-    location?: string[];
-    currentEnergyCost?: string[];
+    monthlyBill?: string[];
+    pincode?: string[];
   };
 };
 
@@ -30,9 +28,8 @@ export async function handleCalculateSavings(
   formData: FormData
 ): Promise<FormState> {
   const rawFormData = {
-    energyConsumption: formData.get('energyConsumption'),
-    location: formData.get('location'),
-    currentEnergyCost: formData.get('currentEnergyCost') || undefined,
+    monthlyBill: formData.get('monthlyBill'),
+    pincode: formData.get('pincode'),
   };
 
   const validatedFields = SavingsCalculatorSchema.safeParse(rawFormData);

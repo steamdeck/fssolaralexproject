@@ -57,55 +57,37 @@ export function CalculatorForm() {
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <FormItem>
                   <FormLabel>
-                    Average Monthly Energy Use (kWh)
+                    Average Monthly Electricity Bill (₹)
                   </FormLabel>
                   <FormControl>
                     <Input
-                      name="energyConsumption"
+                      name="monthlyBill"
                       type="number"
-                      placeholder="e.g., 300"
+                      placeholder="e.g., 2500"
                       required
                     />
                   </FormControl>
                   <FormDescription>
-                    You can find this on your electricity bill.
+                    Enter your average bill amount in Rupees.
                   </FormDescription>
-                  {state.fieldErrors?.energyConsumption && (
-                    <FormMessage>{state.fieldErrors.energyConsumption[0]}</FormMessage>
+                  {state.fieldErrors?.monthlyBill && (
+                    <FormMessage>{state.fieldErrors.monthlyBill[0]}</FormMessage>
                   )}
                 </FormItem>
 
                 <FormItem>
-                  <FormLabel>Location (City, State)</FormLabel>
+                  <FormLabel>Pincode</FormLabel>
                   <FormControl>
-                    <Input name="location" placeholder="e.g., Mumbai, Maharashtra" required />
+                    <Input name="pincode" placeholder="e.g., 110085" required />
                   </FormControl>
                   <FormDescription>
-                    Helps us estimate solar potential in your area.
+                    Your 6-digit area pincode.
                   </FormDescription>
-                  {state.fieldErrors?.location && (
-                    <FormMessage>{state.fieldErrors.location[0]}</FormMessage>
+                  {state.fieldErrors?.pincode && (
+                    <FormMessage>{state.fieldErrors.pincode[0]}</FormMessage>
                   )}
                 </FormItem>
               </div>
-
-              <FormItem>
-                <FormLabel>Current Cost per kWh (Optional)</FormLabel>
-                <FormControl>
-                  <Input
-                    name="currentEnergyCost"
-                    type="number"
-                    step="0.01"
-                    placeholder="e.g., 8.50"
-                  />
-                </FormControl>
-                <FormDescription>
-                  Your cost in Rupees (₹) per kWh, if you know it.
-                </FormDescription>
-                {state.fieldErrors?.currentEnergyCost && (
-                    <FormMessage>{state.fieldErrors.currentEnergyCost[0]}</FormMessage>
-                  )}
-              </FormItem>
               
               <SubmitButton />
               
@@ -131,7 +113,7 @@ export function CalculatorForm() {
                             ₹{state.result.estimatedSavings.toFixed(2)}
                         </div>
                         <p className="text-xs text-primary-foreground/80">
-                            Based on your energy usage and location.
+                            Based on your electricity bill and location.
                         </p>
                     </CardContent>
                 </Card>

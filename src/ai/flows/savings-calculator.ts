@@ -14,14 +14,10 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const SavingsCalculatorInputSchema = z.object({
-  energyConsumption: z
+  monthlyBill: z
     .number()
-    .describe('Monthly energy consumption in kilowatt-hours (kWh).'),
-  location: z.string().describe('City and state in India of the user.'),
-  currentEnergyCost: z
-    .number()
-    .optional()
-    .describe('Current cost per kWh of energy in Rupees (₹).'),
+    .describe('Average monthly electricity bill in Rupees (₹).'),
+  pincode: z.string().describe('The 6-digit pincode of the user\'s location in India.'),
 });
 export type SavingsCalculatorInput = z.infer<typeof SavingsCalculatorInputSchema>;
 
@@ -52,21 +48,22 @@ const prompt = ai.definePrompt({
   output: {schema: SavingsCalculatorOutputSchema},
   prompt: `You are an expert in renewable energy economics and environmental impact in India.
 
-You will calculate the potential savings and environmental impact of switching to solar panels for a user.
+You will calculate the potential savings and environmental impact of switching to solar panels for a user based on their monthly electricity bill and pincode.
 
 Use the following information:
 
-Location: {{{location}}}
-Energy Consumption: {{{energyConsumption}}} kWh/month
-Current Energy Cost: {{{currentEnergyCost}}} ₹/kWh (if available)
+Pincode: {{{pincode}}}
+Monthly Electricity Bill: ₹{{{monthlyBill}}}
+
+Based on the pincode, determine the city, state, and average electricity tariff if not implicitly available. Assume an average cost per unit if needed to estimate energy consumption from the bill.
 
 Provide a recommendation for the type and size of solar panel system that would be suitable for the user's home in India.
 
-Estimate the monthly savings in Rupees (₹) after switching to solar.
+Estimate the monthly savings in Rupees (₹) after switching to solar. The savings should be the amount the user saves from their current bill.
 
 Describe the environmental impact of switching to solar, including carbon emissions reduction in tonnes of CO2.
 
-Ensure that the estimatedSavings field is a number.
+Ensure that the estimatedSavings field is a number representing the money saved per month.
 `,
 });
 
