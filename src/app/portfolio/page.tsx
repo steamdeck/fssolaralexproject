@@ -7,7 +7,15 @@ import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
-const projects = PlaceHolderImages.filter(p => p.id.startsWith('portfolio-project-')).map(p => ({...p, category: 'rohini-sector-8'}));
+const projects = PlaceHolderImages.filter(p => p.id.startsWith('portfolio-project-')).map(p => {
+    if (['portfolio-project-11', 'portfolio-project-12', 'portfolio-project-13'].includes(p.id)) {
+        return {...p, category: 'naharpur'};
+    }
+    if (p.id.startsWith('portfolio-project-')) {
+        return {...p, category: 'rohini-sector-8'};
+    }
+    return p;
+});
 
 const ProjectGrid = ({ filter }: { filter: string }) => {
   const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.category === filter);
@@ -56,6 +64,7 @@ export default function PortfolioPage() {
     { value: 'all', label: 'All' },
     { value: 'rohini-sector-8', label: 'Rohini Sector 8' },
     { value: 'karol-bagh', label: 'Karol Bagh' },
+    { value: 'naharpur', label: 'Naharpur' },
   ];
   
   return (
@@ -74,7 +83,7 @@ export default function PortfolioPage() {
 
           <ScrollReveal delay={200}>
             <Tabs defaultValue="all" className="mt-12 md:mt-16 w-full">
-              <TabsList className="grid w-full grid-cols-3 mx-auto max-w-lg h-auto flex-wrap">
+              <TabsList className="grid w-full grid-cols-4 mx-auto max-w-lg h-auto flex-wrap">
                 {categories.map(category => (
                   <TabsTrigger key={category.value} value={category.value} className="capitalize py-2">
                     {category.label}
