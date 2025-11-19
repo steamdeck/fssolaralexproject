@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
@@ -8,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
 const projects = PlaceHolderImages.filter(p => p.id.startsWith('portfolio-project-')).map(p => {
-    if (['portfolio-project-11', 'portfolio-project-12', 'portfolio-project-13'].includes(p.id)) {
+    if (['portfolio-project-11', 'portfolio-project-12', 'portfolio-project-13', 'portfolio-project-14'].includes(p.id)) {
         return {...p, category: 'naharpur'};
     }
     if (p.id.startsWith('portfolio-project-')) {
@@ -119,3 +120,4 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
