@@ -16,7 +16,7 @@ import {z} from 'genkit';
 const SavingsCalculatorInputSchema = z.object({
   monthlyBill: z
     .number()
-    .describe('Average monthly electricity bill in Rupees (₹).'),
+    .describe('Average monthly electricity bill in Rupees (?).'),
   pincode: z.string().describe('The 6-digit pincode of the user\'s location in India.'),
   landSize: z
     .number()
@@ -27,10 +27,10 @@ export type SavingsCalculatorInput = z.infer<typeof SavingsCalculatorInputSchema
 const SavingsCalculatorOutputSchema = z.object({
   monthlySavings: z
     .number()
-    .describe('Estimated monthly savings in Rupees (₹) after switching to solar.'),
+    .describe('Estimated monthly savings in Rupees (?) after switching to solar.'),
   annualSavings: z
     .number()
-    .describe('Estimated annual savings in Rupees (₹) after switching to solar.'),
+    .describe('Estimated annual savings in Rupees (?) after switching to solar.'),
   environmentalImpact: z
     .string()
     .describe(
@@ -58,7 +58,7 @@ You will calculate the potential savings and environmental impact of switching t
 
 Use the following information:
 Pincode: {{{pincode}}}
-Monthly Electricity Bill: ₹{{{monthlyBill}}}
+Monthly Electricity Bill: ?{{{monthlyBill}}}
 Terrace/Land Size: {{{landSize}}} sq ft
 
 Here are the formulas you MUST use for your calculations:
@@ -68,10 +68,10 @@ Here are the formulas you MUST use for your calculations:
     - Example: 300 sq ft -> 3 kW
 
 2.  **Calculate Required Solar Size from Bill:**
-    - Assume electricity rate is ₹8/unit.
-    - Monthly Units = Monthly Bill (₹) / 8
+    - Assume electricity rate is ?8/unit.
+    - Monthly Units = Monthly Bill (?) / 8
     - Required kW = Monthly Units / 120
-    - Example: Bill ₹500 -> 62.5 units -> 0.52 kW required. Recommend the next practical size, e.g., 1 kW.
+    - Example: Bill ?500 -> 62.5 units -> 0.52 kW required. Recommend the next practical size, e.g., 1 kW.
 
 3.  **Calculate Savings:**
     - Monthly Saving = Monthly Bill
@@ -80,23 +80,23 @@ Here are the formulas you MUST use for your calculations:
 **Your Task:**
 
 1.  **Solar Panel Recommendation:**
-    - Calculate the possible system size based on `landSize`.
-    - Calculate the required system size based on `monthlyBill`.
+    - Calculate the possible system size based on landSize.
+    - Calculate the required system size based on monthlyBill.
     - Compare these two values and recommend the most practical solar panel system size (in kW) for the user. Explain your choice. For instance, if the land can only fit a 2kW system but the user needs 3kW, you should recommend the 2kW system and explain the limitation.
 
 2.  **Savings Calculation:**
-    - Calculate `monthlySavings` which must be equal to the user's `monthlyBill`.
-    - Calculate `annualSavings` which must be `monthlySavings * 12`.
+    - Calculate 'monthlySavings' which must be equal to the user's 'monthlyBill'.
+    - Calculate 'annualSavings' which must be 'monthlySavings * 12'.
 
 3.  **Environmental Impact:**
     - Describe the environmental impact of the recommended solar system, including carbon emissions reduction in tonnes of CO2 per year.
 
 **Output Format:**
 - Your final response must be a JSON object matching the output schema.
-- `monthlySavings` must be a number.
-- `annualSavings` must be a number.
-- `solarPanelRecommendation` should be a descriptive string.
-- `environmentalImpact` should be a descriptive string.
+- 'monthlySavings' must be a number.
+- 'annualSavings' must be a number.
+- 'solarPanelRecommendation' should be a descriptive string.
+- 'environmentalImpact' should be a descriptive string.
 `,
 });
 
