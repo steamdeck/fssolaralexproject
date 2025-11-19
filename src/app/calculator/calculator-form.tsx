@@ -17,7 +17,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useForm } from 'react-hook-form';
-import { CircleDollarSign, Leaf, Loader2, Sparkles } from 'lucide-react';
+import { CircleDollarSign, Leaf, Loader2, Sparkles, Calendar, Home } from 'lucide-react';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -54,10 +54,10 @@ export function CalculatorForm() {
         <CardContent>
           <Form {...form}>
             <form action={formAction} className="space-y-6">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 <FormItem>
                   <FormLabel>
-                    Average Monthly Electricity Bill (₹)
+                    Monthly Bill (₹)
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -68,10 +68,23 @@ export function CalculatorForm() {
                     />
                   </FormControl>
                   <FormDescription>
-                    Enter your average bill amount in Rupees.
+                    Your average bill in Rupees.
                   </FormDescription>
                   {state.fieldErrors?.monthlyBill && (
                     <FormMessage>{state.fieldErrors.monthlyBill[0]}</FormMessage>
+                  )}
+                </FormItem>
+
+                <FormItem>
+                  <FormLabel>Land Size (sq ft)</FormLabel>
+                  <FormControl>
+                    <Input name="landSize" type="number" placeholder="e.g., 500" required />
+                  </FormControl>
+                  <FormDescription>
+                    Available terrace/land area.
+                  </FormDescription>
+                  {state.fieldErrors?.landSize && (
+                    <FormMessage>{state.fieldErrors.landSize[0]}</FormMessage>
                   )}
                 </FormItem>
 
@@ -102,19 +115,34 @@ export function CalculatorForm() {
       {state.result && (
         <div className="mt-12">
             <h2 className="text-3xl font-bold text-center mb-8">Your Personalized Results</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <Card className="bg-primary text-primary-foreground">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+                <Card className="bg-primary text-primary-foreground lg:col-span-2">
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Estimated Monthly Savings</CardTitle>
+                        <CardTitle className="text-sm font-medium">Estimated Savings</CardTitle>
                         <CircleDollarSign className="h-6 w-6 text-primary-foreground/70" />
                     </CardHeader>
-                    <CardContent>
-                        <div className="text-5xl font-bold">
-                            ₹{state.result.estimatedSavings.toFixed(2)}
+                    <CardContent className="flex flex-col md:flex-row gap-8 items-center">
+                        <div className="text-center flex-1">
+                           <p className="text-xs text-primary-foreground/80 mb-1">Monthly Savings</p>
+                            <div className="text-5xl font-bold">
+                                ₹{state.result.monthlySavings.toFixed(2)}
+                            </div>
                         </div>
-                        <p className="text-xs text-primary-foreground/80">
-                            Based on your electricity bill and location.
-                        </p>
+                         <div className="text-center flex-1">
+                           <p className="text-xs text-primary-foreground/80 mb-1">Annual Savings</p>
+                            <div className="text-5xl font-bold">
+                                ₹{state.result.annualSavings.toFixed(2)}
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                        <CardTitle className="text-sm font-medium">Solar System Recommendation</CardTitle>
+                        <Home className="h-6 w-6 text-muted-foreground" />
+                    </CardHeader>
+                    <CardContent>
+                         <p className="text-muted-foreground">{state.result.solarPanelRecommendation}</p>
                     </CardContent>
                 </Card>
                 <Card>
@@ -124,15 +152,6 @@ export function CalculatorForm() {
                     </CardHeader>
                     <CardContent>
                         <p className="text-muted-foreground">{state.result.environmentalImpact}</p>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Solar System Recommendation</CardTitle>
-                        <Sparkles className="h-6 w-6 text-muted-foreground" />
-                    </CardHeader>
-                    <CardContent>
-                         <p className="text-muted-foreground">{state.result.solarPanelRecommendation}</p>
                     </CardContent>
                 </Card>
             </div>

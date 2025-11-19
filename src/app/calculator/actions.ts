@@ -12,6 +12,9 @@ const SavingsCalculatorSchema = z.object({
     .number({ invalid_type_error: 'Please enter a valid number.' })
     .min(1, 'Monthly bill must be greater than 0.'),
   pincode: z.string().length(6, 'Please enter a valid 6-digit pincode.'),
+  landSize: z.coerce
+    .number({ invalid_type_error: 'Please enter a valid number.' })
+    .min(1, 'Land size must be greater than 0.'),
 });
 
 export type FormState = {
@@ -20,6 +23,7 @@ export type FormState = {
   fieldErrors?: {
     monthlyBill?: string[];
     pincode?: string[];
+    landSize?: string[];
   };
 };
 
@@ -30,6 +34,7 @@ export async function handleCalculateSavings(
   const rawFormData = {
     monthlyBill: formData.get('monthlyBill'),
     pincode: formData.get('pincode'),
+    landSize: formData.get('landSize'),
   };
 
   const validatedFields = SavingsCalculatorSchema.safeParse(rawFormData);
