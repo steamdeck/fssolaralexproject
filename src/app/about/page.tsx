@@ -35,13 +35,13 @@ const teamMembers = [
   {
     name: 'Sunita Sharma',
     title: 'Assistant Manager',
-    bio: 'Amit plays a key role in supporting our daily operations and ensuring that our projects run smoothly and efficiently.',
+    bio: 'Sunita plays a key role in supporting our daily operations and ensuring that our projects run smoothly and efficiently.',
     imageId: 'team-member-4',
   },
   {
     name: 'Amit Kumar',
     title: 'Project Coordinator',
-    bio: 'Sunita is the organizational backbone of our projects, coordinating between clients and our technical team for seamless execution.',
+    bio: 'Amit is the organizational backbone of our projects, coordinating between clients and our technical team for seamless execution.',
     imageId: 'team-member-6',
   },
 ];
