@@ -33,7 +33,7 @@ const benefits = [
 const testimonials = [
   {
     name: 'The Sharma Family',
-    location: 'Jaipur, Rajasthan',
+    location: 'Naharpur, Delhi',
     avatar: 'https://picsum.photos/seed/avatar-1/100/100',
     avatarHint: 'indian family photo',
     rating: 5,
@@ -41,7 +41,7 @@ const testimonials = [
   },
   {
     name: 'Gupta Sweets',
-    location: 'Kolkata, West Bengal',
+    location: 'Karol Bagh, New Delhi',
     avatar: 'https://picsum.photos/seed/avatar-2/100/100',
     avatarHint: 'sweet shop storefront',
     rating: 5,
@@ -49,7 +49,7 @@ const testimonials = [
   },
   {
     name: 'Aisha K.',
-    location: 'Hyderabad, Telangana',
+    location: 'Rohini Sector 8, New Delhi',
     avatar: 'https://picsum.photos/seed/avatar-3/100/100',
     avatarHint: 'woman smiling',
     rating: 5,
