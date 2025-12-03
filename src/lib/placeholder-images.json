@@ -31,10 +31,28 @@
       "imageHint": "professional man smile"
     },
     {
+      "id": "team-member-3",
+      "description": "Professional headshot of Priya Singh, HR Manager.",
+      "imageUrl": "https://i.ibb.co/TxnWgDmS/Face.jpg",
+      "imageHint": "professional woman headshot"
+    },
+    {
+      "id": "team-member-4",
+      "description": "Professional headshot of Amit Kumar, Assistant Manager.",
+      "imageUrl": "https://i.ibb.co/G3vtC1D1/Face-1.jpg",
+      "imageHint": "professional man smiling"
+    },
+    {
       "id": "team-member-5",
       "description": "Professional headshot of Abhishek Patel, Lead Manager.",
       "imageUrl": "https://i.ibb.co/Z601dHL5/abhixsjhek-patel-lead-manager.jpg",
       "imageHint": "professional man headshot"
+    },
+    {
+      "id": "team-member-6",
+      "description": "Professional headshot of Sunita Sharma, Project Coordinator.",
+      "imageUrl": "https://i.ibb.co/r2sy03Ff/Face-2.jpg",
+      "imageHint": "woman professional"
     },
     {
       "id": "portfolio-project-1",

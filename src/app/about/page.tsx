@@ -21,10 +21,28 @@ const teamMembers = [
     imageId: 'team-member-2',
   },
   {
+    name: 'Priya Singh',
+    title: 'HR Manager',
+    bio: 'Priya manages our most valuable asset: our people. She fosters a positive and productive work environment for our team.',
+    imageId: 'team-member-3',
+  },
+  {
+    name: 'Amit Kumar',
+    title: 'Assistant Manager',
+    bio: 'Amit plays a key role in supporting our daily operations and ensuring that our projects run smoothly and efficiently.',
+    imageId: 'team-member-4',
+  },
+  {
     name: 'Abhishek Patel',
     title: 'Lead Manager',
     bio: 'Abhishek expertly manages our key projects, ensuring they are delivered on time and to the highest standards of quality.',
     imageId: 'team-member-5',
+  },
+  {
+    name: 'Sunita Sharma',
+    title: 'Project Coordinator',
+    bio: 'Sunita is the organizational backbone of our projects, coordinating between clients and our technical team for seamless execution.',
+    imageId: 'team-member-6',
   },
 ];
 
@@ -268,3 +286,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+    
