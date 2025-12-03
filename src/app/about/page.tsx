@@ -21,6 +21,12 @@ const teamMembers = [
     imageId: 'team-member-2',
   },
   {
+    name: 'Abhishek Patel',
+    title: 'Lead Manager',
+    bio: 'Abhishek expertly manages our key projects, ensuring they are delivered on time and to the highest standards of quality.',
+    imageId: 'team-member-5',
+  },
+  {
     name: 'Priya Singh',
     title: 'HR Manager',
     bio: 'Priya manages our most valuable asset: our people. She fosters a positive and productive work environment for our team.',
@@ -31,12 +37,6 @@ const teamMembers = [
     title: 'Assistant Manager',
     bio: 'Amit plays a key role in supporting our daily operations and ensuring that our projects run smoothly and efficiently.',
     imageId: 'team-member-4',
-  },
-  {
-    name: 'Abhishek Patel',
-    title: 'Lead Manager',
-    bio: 'Abhishek expertly manages our key projects, ensuring they are delivered on time and to the highest standards of quality.',
-    imageId: 'team-member-5',
   },
   {
     name: 'Sunita Sharma',
@@ -286,5 +286,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-    
