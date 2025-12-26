@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: 'GH Solar - Powering a Brighter Future',
   description:
     'GH Solar offers top-tier solar panel solutions, from consultation and installation to maintenance and financing. Switch to clean, renewable energy today.',
+  icons: {
+    icon: 'https://i.ibb.co/XZXPN6Qc/Whats-App-Image-2025-11-15-at-12-50-34-PM-removebg-preview.png',
+  },
 };
 
 export default function RootLayout({
